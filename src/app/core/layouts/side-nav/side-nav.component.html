@@ -1,0 +1,1269 @@
+
+
+
+<!-- Sidebar menu-->
+<div class="app-sidebar__overlay" data-toggle="sidebar"></div>
+<aside class="app-sidebar">
+    <div class="side-tab-body p-0 border-0 resp-vtabs hor_1" id="sidemenu-Tab" style="display: block; width: 100%; margin: 0px;">
+        <nav class="first-sidemenu ps ps--active-y">
+            <div class="text-center">
+                <a href="index.html" class="active"></a><a href="index.html" class="active"><img src="assets/img/brand/bigtapp-icon.png" class="fav-icon" alt="image" /></a>
+            </div>
+            <ul class="resp-tabs-list hor_1" id="myList" style="margin-top: 3px;">
+                <li class="dashboard-admin resp-tab-item hor_1" [ngClass]="{'active': navLinkId == '1'}" data-toggle="tooltip" data-placement="right" title="" data-original-title="Dashboard" (click)="onClickMenu(1)" aria-controls="hor_1_tab_item-0" href="#dashboard" role="tab">
+                    <i class="fa fa-home"></i><span class="menu__label">Dashboard</span>
+                </li>
+
+                <li class="components-admin resp-tab-item hor_1 " data-toggle="tooltip" data-placement="right" title="" data-original-title="Components" [ngClass]="{'active': navLinkId == '2'}"aria-expanded="hor_1_tab_item-1" href="#components" (click)="onClickMenu(2)" role="tab">
+                    <i class="fa fa-microchip"></i><span class="menu__label">Components</span>
+                </li>
+                <li class="app-admin resp-tab-item hor_1" data-toggle="tooltip" data-placement="right" 
+                [ngClass]="{'active': navLinkId == '3'}" title="" data-original-title="Apps" aria-controls="hor_1_tab_item-2" (click)="onClickMenu(3)" role="tab">
+                    <i class="fa fa-th-large"></i><span class="menu__label">Apps</span>
+                </li>
+                <!-- <li class="element-admin resp-tab-item hor_1" data-toggle="tooltip" data-placement="right" title="" data-original-title="UI Elements" aria-controls="hor_1_tab_item-3" role="tab">
+                    <i class="side-menu__icon bx bx-tone"></i><span class="menu__label">UI Elements</span>
+                </li>
+
+                <li class="forms-admin resp-tab-item hor_1" data-toggle="tooltip" data-placement="right" title="" data-original-title="Forms" aria-controls="hor_1_tab_item-7" role="tab">
+                    <i class="side-menu__icon bx bx-receipt"></i><span class="menu__label">Forms</span><span class="badge badge-danger menu-badge">6</span>
+                </li>
+                
+                <li class="pages-admin resp-tab-item hor_1" data-toggle="tooltip" data-placement="right" title="" data-original-title="Pages" aria-controls="hor_1_tab_item-9" role="tab">
+                    <i class="side-menu__icon bx bx-notepad"></i><span class="menu__label">Pages</span>
+                </li> -->
+                
+            </ul>
+           
+        </nav>
+        
+        <nav class="second-sidemenu ps ps--active-y">
+            <ul class="resp-tabs-container hor_1">
+                
+                <div class="user-info mb-1">
+                    <div class="users-profile">
+                        <a href="#" class="Branding Logo"> <img src="../../../../assets/img/Bigtap logo_CMYK.png" style="width:120px; padding-top:10px" /></a>
+                       
+                    </div>
+                    
+                </div>
+
+                <li class="dashboard-admin  resp-tab-content hor_1" aria-labelledby="hor_1_tab_item-0" [ngClass]="{'active resp-tab-content-active': navLinkId == '1'}">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="panel sidetab-menu">
+                                
+                                <div class="panel-body tabs-menu-body p-0 border-0">
+                                    <div class="tab-content">
+                                        <div class="tab-pane" id="side1">
+                                            
+                                            <h5 class="menu-label mt-3 mb-2">Companies List</h5>
+                                            <div class="side-menu p-0">
+                                                <div class="slide submenu">
+                                                    <a class="side-menu__item" data-toggle="slide" href="#"><i class="las la-pager"></i> <span class="side-menu__label">Banking</span><i class=" fa fa-chevron-down"></i></a>
+                                                    <ul class="slide-menu submenu-list">
+                                                        <li><a href="widgets.html" class="slide-item">Bank Name 1</a></li>
+                                                        <li><a href="chart-widgets.html" class="slide-item">Bank Name 2</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                            <div class="side-menu p-0">
+                                                <div class="slide submenu">
+                                                    <a class="side-menu__item" data-toggle="slide" href="#"><i class="las la-map-marked-alt"></i> <span class="side-menu__label">Finance</span><i class=" fa fa-chevron-down"></i></a>
+                                                    <ul class="slide-menu submenu-list">
+                                                        <li><a href="map-leaflet.html" class="slide-item">Finance Company 1</a></li>
+                                                        <li><a href="map-vector.html" class="slide-item">Finance Company 2</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                            
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <h2 class="resp-accordion hor_1" role="tab" aria-expanded="hor_1_tab_item-1" id="components"><span class="resp-arrow"></span> <i class="side-menu__icon bx bx-grid-alt"></i><span class="menu__label">Components</span></h2>
+                <li class="components-admin resp-tab-content hor_1" aria-labelledby="hor_1_tab_item-1" [ngClass]="{'active resp-tab-content-active': navLinkId == '2'}">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="panel sidetab-menu">
+                                
+                                <div class="panel-body tabs-menu-body p-0 border-0">
+                                    <div class="tab-content">
+                                        <div class="tab-pane" id="side11">
+                                            <div class="menu">
+                                                <h6 class="mb-2 menu-label">Widgets &amp; Mail</h6>
+                                                <a class="slide-item" href="icons.html"><i class="las la-icons"></i>Icons</a>
+                                                <div class="side-menu p-0">
+                                                    <div class="slide submenu">
+                                                        <a class="side-menu__item" data-toggle="slide" href="#"><i class="las la-pager"></i> <span class="side-menu__label">Widgets</span><i class="angle fe fe-chevron-down"></i></a>
+                                                        <ul class="slide-menu submenu-list">
+                                                            <li><a href="widgets.html" class="slide-item">Widgets</a></li>
+                                                            <li><a href="chart-widgets.html" class="slide-item">Chart-widgets</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="side-menu p-0">
+                                                    <div class="slide submenu">
+                                                        <a class="side-menu__item" data-toggle="slide" href="#"><i class="las la-map-marked-alt"></i> <span class="side-menu__label">Maps</span><i class="angle fe fe-chevron-down"></i></a>
+                                                        <ul class="slide-menu submenu-list">
+                                                            <li><a href="map-leaflet.html" class="slide-item">Mapel Maps</a></li>
+                                                            <li><a href="map-vector.html" class="slide-item">Vector Maps</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="side-menu p-0">
+                                                    <div class="slide submenu">
+                                                        <a class="side-menu__item" data-toggle="slide" href="#"><i class="las la-border-all"></i> <span class="side-menu__label">Tables</span><i class="angle fe fe-chevron-down"></i></a>
+                                                        <ul class="slide-menu submenu-list">
+                                                            <li><a href="table-basic.html" class="slide-item">Basic tables</a></li>
+                                                            <li><a href="table-data.html" class="slide-item">Data-tables</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <h5 class="menu-label mt-3 mb-2">Account</h5>
+                                            <ul class="side-account pl-0">
+                                                <li class="acc-link">
+                                                    <a href="#"> <i class="las la-download text-success mr-2 tx-20"></i> Downloads </a>
+                                                </li>
+                                                <li class="acc-link">
+                                                    <a href="#"> <i class="las la-folder-open text-danger mr-2 tx-20"></i> Archive </a>
+                                                </li>
+                                                <li class="acc-link">
+                                                    <a href="#"> <i class="las la-rss-square text-purple mr-2 tx-20"></i> Feed Manager </a>
+                                                </li>
+                                                <li class="acc-link">
+                                                    <a href="#"> <i class="las la-cog text-primary my-auto mr-2 tx-20"></i> Settings </a>
+                                                </li>
+                                            </ul>
+                                            <h5 class="fs-15 font-weight-semibold menu-label mt-3 mb-2">Contacts</h5>
+                                            <div class="side-menu p-0">
+                                                <div class="card-body p-0">
+                                                    <div class="list-group list-group-flush">
+                                                        <div class="list-group-item d-flex pl-0 pr-0 align-items-center">
+                                                            <div class="mr-2">
+                                                                <span class="avatar brround cover-image" data-image-src="assets/img/faces/12.jpg" style="background: url('assets/img/faces/12.jpg') center center;">
+                                                                    <span class="avatar-status bg-success"></span>
+                                                                </span>
+                                                            </div>
+                                                            <div class=""><a class="tx-14 ml-2" href="#">Mozelle</a></div>
+                                                            <div class="ml-auto">
+                                                                <a href="#" class="btn btn-sm btn-light btn-icon box-shadow-0 mr-1"><i class="fa fa-phone fs-10"></i></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="list-group-item d-flex pl-0 pr-0 align-items-center">
+                                                            <div class="mr-2">
+                                                                <span class="avatar brround cover-image" data-image-src="assets/img/faces/11.jpg" style="background: url('assets/img/faces/11.jpg') center center;"></span>
+                                                            </div>
+                                                            <div class=""><a class="tx-14 ml-2" href="#">Florinda</a></div>
+                                                            <div class="ml-auto">
+                                                                <a href="#" class="btn btn-sm btn-light btn-icon box-shadow-0 mr-1"><i class="fa fa-phone fs-10"></i></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="list-group-item d-flex pl-0 pr-0 align-items-center">
+                                                            <div class="mr-2">
+                                                                <span class="avatar brround cover-image" data-image-src="assets/img/faces/5.jpg" style="background: url('assets/img/faces/5.jpg') center center;">
+                                                                    <span class="avatar-status bg-success"></span>
+                                                                </span>
+                                                            </div>
+                                                            <div class=""><a class="tx-14 ml-2" href="#">lina Bernie</a></div>
+                                                            <div class="ml-auto">
+                                                                <a href="#" class="btn btn-sm btn-light btn-icon box-shadow-0 mr-1"><i class="fa fa-phone fs-10"></i></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="list-group-item d-flex pl-0 pr-0 align-items-center">
+                                                            <div class="mr-2">
+                                                                <span class="avatar brround cover-image" data-image-src="assets/img/faces/2.jpg" style="background: url('assets/img/faces/2.jpg') center center;">
+                                                                    <span class="avatar-status bg-success"></span>
+                                                                </span>
+                                                            </div>
+                                                            <div class=""><a class="tx-14 ml-2" href="#">Mclaughin</a></div>
+                                                            <div class="ml-auto">
+                                                                <a href="#" class="btn btn-sm btn-light btn-icon box-shadow-0 mr-1"><i class="fa fa-phone fs-10"></i></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <h2 class="resp-accordion hor_1" role="tab" aria-controls="hor_1_tab_item-2"><span class="resp-arrow"></span> <i class="side-menu__icon bx bx-task"></i><span class="menu__label">Apps</span></h2>
+                <li class="app-admin resp-tab-content hor_1" aria-labelledby="hor_1_tab_item-2">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="panel sidetab-menu">
+                                <div class="user-info mb-1">
+                                    <div class="users-profile">
+                                        <a href="profile.html" class="user-profile-img"> <img src="assets/img/faces/6.jpg" alt="User" class="brround avatar-xl" /></a>
+                                        <div class="green_icon"></div>
+                                    </div>
+                                    <div class="social-details mt-2">
+                                        <h6 class="mb-0">Mack Adamia</h6>
+                                        <p class="mb-2 mt-1 text-muted tx-12">Administrator</p>
+                                        <a href="#"><i class="zmdi zmdi-facebook-box"></i></a> <a href="#"><i class="zmdi zmdi-linkedin-box"></i></a> <a href="#"><i class="zmdi zmdi-instagram"></i></a>
+                                        <a href="#"><i class="zmdi zmdi-twitter-box"></i></a>
+                                    </div>
+                                </div>
+                                <div class="panel-body tabs-menu-body p-0 border-0">
+                                    <div class="tab-content">
+                                        <div class="tab-pane active" id="side-1">
+                                            <div class="menu">
+                                                <h6 class="mb-2 menu-label">Apps</h6>
+                                                <a class="slide-item" href="cards.html"><i class="las la-vr-cardboard"></i>Cards</a> <a class="slide-item" href="darggablecards.html"><i class="las la-id-card"></i>Darggablecards</a>
+                                                <a class="slide-item" href="rangeslider.html"><i class="las la-sliders-h"></i>Range-slider</a> <a class="slide-item" href="calendar.html"><i class="las la-calendar"></i>Calender</a>
+                                                <a class="slide-item" href="page-session.html"><i class="las la-sync-alt"></i>Page-session</a>
+                                                <div class="side-menu p-0">
+                                                    <div class="slide submenu">
+                                                        <a class="side-menu__item" data-toggle="slide" href="#"><i class="las la-envelope"></i> <span class="side-menu__label">Contacts</span><i class="angle fe fe-chevron-down"></i></a>
+                                                        <ul class="slide-menu submenu-list">
+                                                            <li><a href="contacts.html" class="slide-item">Contacts</a></li>
+                                                            <li><a href="contacts-one.html" class="slide-item">Contacts-table</a></li>
+                                                            <li><a href="contacts-two.html" class="slide-item">Contacts-grid</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <a class="slide-item" href="todotask.html"><i class="las la-question-circle"></i>Todotask</a>
+                                                <a class="slide-item" href="image-compare.html"><i class="las la-images"></i>Image-compare</a>
+                                                <a class="slide-item" href="notification.html"><i class="las la-exclamation-triangle"></i>Notification</a>
+                                                <a class="slide-item" href="widget-notification.html"><i class="las la-window-maximize"></i>Widget-notification</a>
+                                                <a class="slide-item" href="treeview.html"><i class="las la-address-card"></i>Treeview</a>
+                                                <div class="side-menu p-0">
+                                                    <div class="slide submenu">
+                                                        <a class="side-menu__item" data-toggle="slide" href="#">
+                                                            <i class="las la-file-invoice-dollar"></i> <span class="side-menu__label">File-manager</span><i class="angle fe fe-chevron-down"></i>
+                                                        </a>
+                                                        <ul class="slide-menu submenu-list">
+                                                            <li><a href="file-manager.html" class="slide-item">File-manager</a></li>
+                                                            <li><a href="file-manager-list.html" class="slide-item">File-manager-list</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <h5 class="menu-label mt-3 mb-2">Account</h5>
+                                            <ul class="side-account pl-0">
+                                                <li class="acc-link">
+                                                    <a href="#"> <i class="las la-download text-success mr-2 tx-20"></i> Downloads </a>
+                                                </li>
+                                                <li class="acc-link">
+                                                    <a href="#"> <i class="las la-folder-open text-danger mr-2 tx-20"></i> Archive </a>
+                                                </li>
+                                                <li class="acc-link">
+                                                    <a href="#"> <i class="las la-rss-square text-purple mr-2 tx-20"></i> Feed Manager </a>
+                                                </li>
+                                                <li class="acc-link">
+                                                    <a href="#"> <i class="las la-cog text-primary my-auto mr-2 tx-20"></i> Settings </a>
+                                                </li>
+                                            </ul>
+                                            <h5 class="fs-15 font-weight-semibold menu-label mt-3 mb-2">Contacts</h5>
+                                            <div class="side-menu p-0">
+                                                <div class="card-body p-0">
+                                                    <div class="list-group list-group-flush">
+                                                        <div class="list-group-item d-flex pl-0 pr-0 align-items-center">
+                                                            <div class="mr-2">
+                                                                <span class="avatar brround cover-image" data-image-src="assets/img/faces/12.jpg" style="background: url('assets/img/faces/12.jpg') center center;">
+                                                                    <span class="avatar-status bg-success"></span>
+                                                                </span>
+                                                            </div>
+                                                            <div class=""><a class="tx-14 ml-2" href="#">Mozelle</a></div>
+                                                            <div class="ml-auto">
+                                                                <a href="#" class="btn btn-sm btn-light btn-icon box-shadow-0 mr-1"><i class="fa fa-phone fs-10"></i></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="list-group-item d-flex pl-0 pr-0 align-items-center">
+                                                            <div class="mr-2">
+                                                                <span class="avatar brround cover-image" data-image-src="assets/img/faces/11.jpg" style="background: url('assets/img/faces/11.jpg') center center;"></span>
+                                                            </div>
+                                                            <div class=""><a class="tx-14 ml-2" href="#">Florinda</a></div>
+                                                            <div class="ml-auto">
+                                                                <a href="#" class="btn btn-sm btn-light btn-icon box-shadow-0 mr-1"><i class="fa fa-phone fs-10"></i></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="list-group-item d-flex pl-0 pr-0 align-items-center">
+                                                            <div class="mr-2">
+                                                                <span class="avatar brround cover-image" data-image-src="assets/img/faces/5.jpg" style="background: url('assets/img/faces/5.jpg') center center;">
+                                                                    <span class="avatar-status bg-success"></span>
+                                                                </span>
+                                                            </div>
+                                                            <div class=""><a class="tx-14 ml-2" href="#">lina Bernie</a></div>
+                                                            <div class="ml-auto">
+                                                                <a href="#" class="btn btn-sm btn-light btn-icon box-shadow-0 mr-1"><i class="fa fa-phone fs-10"></i></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="list-group-item d-flex pl-0 pr-0 align-items-center">
+                                                            <div class="mr-2">
+                                                                <span class="avatar brround cover-image" data-image-src="assets/img/faces/2.jpg" style="background: url('assets/img/faces/2.jpg') center center;">
+                                                                    <span class="avatar-status bg-success"></span>
+                                                                </span>
+                                                            </div>
+                                                            <div class=""><a class="tx-14 ml-2" href="#">Mclaughin</a></div>
+                                                            <div class="ml-auto">
+                                                                <a href="#" class="btn btn-sm btn-light btn-icon box-shadow-0 mr-1"><i class="fa fa-phone fs-10"></i></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <h2 class="resp-accordion hor_1" role="tab" aria-controls="hor_1_tab_item-3"><span class="resp-arrow"></span> <i class="side-menu__icon bx bx-tone"></i><span class="menu__label">UI Elements</span></h2>
+                <li class="element-admin resp-tab-content hor_1" aria-labelledby="hor_1_tab_item-3">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="panel sidetab-menu">
+                                <div class="user-info mb-1">
+                                    <div class="users-profile">
+                                        <a href="profile.html" class="user-profile-img"> <img src="assets/img/faces/6.jpg" alt="User" class="brround avatar-xl" /></a>
+                                        <div class="green_icon"></div>
+                                    </div>
+                                    <div class="social-details mt-2">
+                                        <h6 class="mb-0">Mack Adamia</h6>
+                                        <p class="mb-2 mt-1 text-muted tx-12">Administrator</p>
+                                        <a href="#"><i class="zmdi zmdi-facebook-box"></i></a> <a href="#"><i class="zmdi zmdi-linkedin-box"></i></a> <a href="#"><i class="zmdi zmdi-instagram"></i></a>
+                                        <a href="#"><i class="zmdi zmdi-twitter-box"></i></a>
+                                    </div>
+                                </div>
+                                <div class="panel-body tabs-menu-body p-0 border-0">
+                                    <div class="tab-content">
+                                        <div class="tab-pane active" id="side-11">
+                                            <div class="menu">
+                                                <h6 class="mb-2 menu-label">Elements</h6>
+                                                <a class="slide-item" href="alerts.html"><i class="las la-exclamation-circle"></i>Alerts</a> <a class="slide-item" href="avatar.html"><i class="las la-user-circle"></i>Avatar</a>
+                                                <a class="slide-item" href="breadcrumbs.html"><i class="las la-bread-slice"></i>Breadcrumbs</a> <a class="slide-item" href="buttons.html"><i class="las la-tablet-alt"></i>Buttons</a>
+                                                <a class="slide-item" href="badge.html"><i class="las la-certificate"></i>Badge</a> <a class="slide-item" href="dropdown.html"><i class="las la-chevron-circle-down"></i>Dropdown</a>
+                                                <a class="slide-item" href="thumbnails.html"><i class="las la-thumbtack"></i>Thumbnails</a> <a class="slide-item" href="images.html"><i class="las la-image"></i>Images</a>
+                                                <a class="slide-item" href="list-group.html"><i class="las la-list-ol"></i>List Group</a> <a class="slide-item" href="navigation.html"><i class="las la-location-arrow"></i>Navigation</a>
+                                                <a class="slide-item" href="pagination.html"><i class="las la-sliders-h"></i>Pagination</a> <a class="slide-item" href="popover.html"><i class="lab la-dashcube"></i>Popover</a>
+                                                <a class="slide-item" href="progress.html"><i class="las la-tasks"></i>Progress</a> <a class="slide-item" href="spinners.html"><i class="las la-spinner"></i>Spinners</a>
+                                                <a class="slide-item" href="media-object.html"><i class="las la-hashtag"></i>Media-object</a> <a class="slide-item" href="typography.html"><i class="las la-text-height"></i>Typography</a>
+                                                <a class="slide-item" href="tooltip.html"><i class="las la-caret-up"></i>Tooltip</a> <a class="slide-item" href="toast.html"><i class="las la-donate"></i>Toast</a>
+                                                <a class="slide-item" href="tags.html"><i class="las la-book-open"></i>Tags</a> <a class="slide-item" href="tabs.html"><i class="las la-server"></i>Tabs</a>
+                                            </div>
+                                            <h5 class="menu-label mt-3 mb-2">Account</h5>
+                                            <ul class="side-account pl-0">
+                                                <li class="acc-link">
+                                                    <a href="#"> <i class="las la-download text-success mr-2 tx-20"></i> Downloads </a>
+                                                </li>
+                                                <li class="acc-link">
+                                                    <a href="#"> <i class="las la-folder-open text-danger mr-2 tx-20"></i> Archive </a>
+                                                </li>
+                                                <li class="acc-link">
+                                                    <a href="#"> <i class="las la-rss-square text-purple mr-2 tx-20"></i> Feed Manager </a>
+                                                </li>
+                                                <li class="acc-link">
+                                                    <a href="#"> <i class="las la-cog text-primary my-auto mr-2 tx-20"></i> Settings </a>
+                                                </li>
+                                            </ul>
+                                            <h5 class="fs-15 font-weight-semibold menu-label mt-3 mb-2">Contacts</h5>
+                                            <div class="side-menu p-0">
+                                                <div class="card-body p-0">
+                                                    <div class="list-group list-group-flush">
+                                                        <div class="list-group-item d-flex pl-0 pr-0 align-items-center">
+                                                            <div class="mr-2">
+                                                                <span class="avatar brround cover-image" data-image-src="assets/img/faces/12.jpg" style="background: url('assets/img/faces/12.jpg') center center;">
+                                                                    <span class="avatar-status bg-success"></span>
+                                                                </span>
+                                                            </div>
+                                                            <div class=""><a class="tx-14 ml-2" href="#">Mozelle</a></div>
+                                                            <div class="ml-auto">
+                                                                <a href="#" class="btn btn-sm btn-light btn-icon box-shadow-0 mr-1"><i class="fa fa-phone fs-10"></i></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="list-group-item d-flex pl-0 pr-0 align-items-center">
+                                                            <div class="mr-2">
+                                                                <span class="avatar brround cover-image" data-image-src="assets/img/faces/11.jpg" style="background: url('assets/img/faces/11.jpg') center center;"></span>
+                                                            </div>
+                                                            <div class=""><a class="tx-14 ml-2" href="#">Florinda</a></div>
+                                                            <div class="ml-auto">
+                                                                <a href="#" class="btn btn-sm btn-light btn-icon box-shadow-0 mr-1"><i class="fa fa-phone fs-10"></i></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="list-group-item d-flex pl-0 pr-0 align-items-center">
+                                                            <div class="mr-2">
+                                                                <span class="avatar brround cover-image" data-image-src="assets/img/faces/5.jpg" style="background: url('assets/img/faces/5.jpg') center center;">
+                                                                    <span class="avatar-status bg-success"></span>
+                                                                </span>
+                                                            </div>
+                                                            <div class=""><a class="tx-14 ml-2" href="#">lina Bernie</a></div>
+                                                            <div class="ml-auto">
+                                                                <a href="#" class="btn btn-sm btn-light btn-icon box-shadow-0 mr-1"><i class="fa fa-phone fs-10"></i></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="list-group-item d-flex pl-0 pr-0 align-items-center">
+                                                            <div class="mr-2">
+                                                                <span class="avatar brround cover-image" data-image-src="assets/img/faces/2.jpg" style="background: url('assets/img/faces/2.jpg') center center;">
+                                                                    <span class="avatar-status bg-success"></span>
+                                                                </span>
+                                                            </div>
+                                                            <div class=""><a class="tx-14 ml-2" href="#">Mclaughin</a></div>
+                                                            <div class="ml-auto">
+                                                                <a href="#" class="btn btn-sm btn-light btn-icon box-shadow-0 mr-1"><i class="fa fa-phone fs-10"></i></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <h2 class="resp-accordion hor_1" role="tab" aria-controls="hor_1_tab_item-4">
+                    <span class="resp-arrow"></span> <i class="side-menu__icon bx bx-box"></i><span class="menu__label">Advanceui</span><span class="badge badge-warning menu-badge">11</span>
+                </h2>
+                <li class="advanceui-admin resp-tab-content hor_1" aria-labelledby="hor_1_tab_item-4">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="panel sidetab-menu">
+                                <div class="user-info mb-1">
+                                    <div class="users-profile">
+                                        <a href="profile.html" class="user-profile-img"> <img src="assets/img/faces/6.jpg" alt="User" class="brround avatar-xl" /></a>
+                                        <div class="green_icon"></div>
+                                    </div>
+                                    <div class="social-details mt-2">
+                                        <h6 class="mb-0">Mack Adamia</h6>
+                                        <p class="mb-2 mt-1 text-muted tx-12">Administrator</p>
+                                        <a href="#"><i class="zmdi zmdi-facebook-box"></i></a> <a href="#"><i class="zmdi zmdi-linkedin-box"></i></a> <a href="#"><i class="zmdi zmdi-instagram"></i></a>
+                                        <a href="#"><i class="zmdi zmdi-twitter-box"></i></a>
+                                    </div>
+                                </div>
+                                <div class="panel-body tabs-menu-body p-0 border-0">
+                                    <div class="tab-content">
+                                        <div class="tab-pane active" id="side-61">
+                                            <div class="menu">
+                                                <h6 class="mb-2 menu-label">Advanced UI</h6>
+                                                <a class="slide-item" href="accordion.html"><i class="las la-stream"></i>Accordion</a> <a class="slide-item" href="carousel.html"><i class="las la-sliders-h"></i>Carousel</a>
+                                                <a class="slide-item" href="collapse.html"><i class="las la-compress-arrows-alt"></i>Collapse</a> <a class="slide-item" href="modals.html"><i class="lab la-modx"></i>Modals</a>
+                                                <a class="slide-item" href="timeline.html"><i class="las la-signal"></i>Timeline</a> <a class="slide-item" href="sweet-alert.html"><i class="las la-exclamation-circle"></i>Sweet Alert</a>
+                                                <a class="slide-item" href="rating.html"><i class="las la-star-half-alt"></i>Ratings</a> <a class="slide-item" href="counters.html"><i class="las la-calculator"></i>Counters</a>
+                                                <a class="slide-item" href="search.html"><i class="las la-search"></i>Search</a>
+                                                <div class="side-menu p-0">
+                                                    <div class="slide submenu">
+                                                        <a class="side-menu__item" data-toggle="slide" href="#">
+                                                            <i class="las la-user-friends"></i> <span class="side-menu__label">Userlist</span><i class="angle fe fe-chevron-down"></i>
+                                                        </a>
+                                                        <ul class="slide-menu submenu-list">
+                                                            <li><a href="userlist.html" class="slide-item">Userlist</a></li>
+                                                            <li><a href="userlist2.html" class="slide-item">Userlist2</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <a class="slide-item" href="blog.html"><i class="las la-blog"></i>Blog</a> <a class="slide-item" href="cookies.html"><i class="la la-moon-o"></i>Cookies</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h5 class="menu-label mt-3 mb-2">Account</h5>
+                                <ul class="side-account pl-0">
+                                    <li class="acc-link">
+                                        <a href="#"> <i class="las la-download text-success mr-2 tx-20"></i> Downloads </a>
+                                    </li>
+                                    <li class="acc-link">
+                                        <a href="#"> <i class="las la-folder-open text-danger mr-2 tx-20"></i> Archive </a>
+                                    </li>
+                                    <li class="acc-link">
+                                        <a href="#"> <i class="las la-rss-square text-purple mr-2 tx-20"></i> Feed Manager </a>
+                                    </li>
+                                    <li class="acc-link">
+                                        <a href="#"> <i class="las la-cog text-primary my-auto mr-2 tx-20"></i> Settings </a>
+                                    </li>
+                                </ul>
+                                <h5 class="fs-15 font-weight-semibold menu-label mt-3 mb-2">Contacts</h5>
+                                <div class="side-menu p-0">
+                                    <div class="card-body p-0">
+                                        <div class="list-group list-group-flush">
+                                            <div class="list-group-item d-flex pl-0 pr-0 align-items-center">
+                                                <div class="mr-2">
+                                                    <span class="avatar brround cover-image" data-image-src="assets/img/faces/12.jpg" style="background: url('assets/img/faces/12.jpg') center center;">
+                                                        <span class="avatar-status bg-success"></span>
+                                                    </span>
+                                                </div>
+                                                <div class=""><a class="tx-14 ml-2" href="#">Mozelle</a></div>
+                                                <div class="ml-auto">
+                                                    <a href="#" class="btn btn-sm btn-light btn-icon box-shadow-0 mr-1"><i class="fa fa-phone fs-10"></i></a>
+                                                </div>
+                                            </div>
+                                            <div class="list-group-item d-flex pl-0 pr-0 align-items-center">
+                                                <div class="mr-2">
+                                                    <span class="avatar brround cover-image" data-image-src="assets/img/faces/11.jpg" style="background: url('assets/img/faces/11.jpg') center center;"></span>
+                                                </div>
+                                                <div class=""><a class="tx-14 ml-2" href="#">Florinda</a></div>
+                                                <div class="ml-auto">
+                                                    <a href="#" class="btn btn-sm btn-light btn-icon box-shadow-0 mr-1"><i class="fa fa-phone fs-10"></i></a>
+                                                </div>
+                                            </div>
+                                            <div class="list-group-item d-flex pl-0 pr-0 align-items-center">
+                                                <div class="mr-2">
+                                                    <span class="avatar brround cover-image" data-image-src="assets/img/faces/5.jpg" style="background: url('assets/img/faces/5.jpg') center center;">
+                                                        <span class="avatar-status bg-success"></span>
+                                                    </span>
+                                                </div>
+                                                <div class=""><a class="tx-14 ml-2" href="#">lina Bernie</a></div>
+                                                <div class="ml-auto">
+                                                    <a href="#" class="btn btn-sm btn-light btn-icon box-shadow-0 mr-1"><i class="fa fa-phone fs-10"></i></a>
+                                                </div>
+                                            </div>
+                                            <div class="list-group-item d-flex pl-0 pr-0 align-items-center">
+                                                <div class="mr-2">
+                                                    <span class="avatar brround cover-image" data-image-src="assets/img/faces/2.jpg" style="background: url('assets/img/faces/2.jpg') center center;">
+                                                        <span class="avatar-status bg-success"></span>
+                                                    </span>
+                                                </div>
+                                                <div class=""><a class="tx-14 ml-2" href="#">Mclaughin</a></div>
+                                                <div class="ml-auto">
+                                                    <a href="#" class="btn btn-sm btn-light btn-icon box-shadow-0 mr-1"><i class="fa fa-phone fs-10"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <h2 class="resp-accordion hor_1" role="tab" aria-controls="hor_1_tab_item-5"><span class="resp-arrow"></span> <i class="side-menu__icon bx bx-message-alt-edit"></i><span class="menu__label">Utilities</span></h2>
+                <li class="utilities-admin resp-tab-content hor_1" aria-labelledby="hor_1_tab_item-5">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="panel sidetab-menu">
+                                <div class="user-info mb-1">
+                                    <div class="users-profile">
+                                        <a href="profile.html" class="user-profile-img"> <img src="assets/img/faces/6.jpg" alt="User" class="brround avatar-xl" /></a>
+                                        <div class="green_icon"></div>
+                                    </div>
+                                    <div class="social-details mt-2">
+                                        <h6 class="mb-0">Mack Adamia</h6>
+                                        <p class="mb-2 mt-1 text-muted tx-12">Administrator</p>
+                                        <a href="#"><i class="zmdi zmdi-facebook-box"></i></a> <a href="#"><i class="zmdi zmdi-linkedin-box"></i></a> <a href="#"><i class="zmdi zmdi-instagram"></i></a>
+                                        <a href="#"><i class="zmdi zmdi-twitter-box"></i></a>
+                                    </div>
+                                </div>
+                                <div class="panel-body tabs-menu-body p-0 border-0">
+                                    <div class="tab-content">
+                                        <div class="tab-pane active" id="side-81">
+                                            <div class="menu">
+                                                <h6 class="mb-2 menu-label">Utilities</h6>
+                                                <a class="slide-item" href="background.html"><i class="las la-stop"></i>Background</a> <a class="slide-item" href="border.html"><i class="las la-border-style"></i>Border</a>
+                                                <a class="slide-item" href="display.html"><i class="las la-tv"></i>Display</a> <a class="slide-item" href="flex.html"><i class="las la-grip-lines"></i>Flex</a>
+                                                <a class="slide-item" href="height.html"><i class="las la-text-height"></i>Height</a> <a class="slide-item" href="margin.html"><i class="lab la-creative-commons-nd"></i>Margin</a>
+                                                <a class="slide-item" href="padding.html"><i class="lab la-squarespace"></i>Padding</a> <a class="slide-item" href="position.html"><i class="las la-plus-square"></i>Position</a>
+                                                <a class="slide-item" href="width.html"><i class="las la-text-width"></i>Width</a> <a class="slide-item" href="extras.html"><i class="las la-window-maximize"></i>Extras</a>
+                                            </div>
+                                            <h5 class="menu-label mt-3 mb-2">Account</h5>
+                                            <ul class="side-account pl-0">
+                                                <li class="acc-link">
+                                                    <a href="#"> <i class="las la-download text-success mr-2 tx-20"></i> Downloads </a>
+                                                </li>
+                                                <li class="acc-link">
+                                                    <a href="#"> <i class="las la-folder-open text-danger mr-2 tx-20"></i> Archive </a>
+                                                </li>
+                                                <li class="acc-link">
+                                                    <a href="#"> <i class="las la-rss-square text-purple mr-2 tx-20"></i> Feed Manager </a>
+                                                </li>
+                                                <li class="acc-link">
+                                                    <a href="#"> <i class="las la-cog text-primary my-auto mr-2 tx-20"></i> Settings </a>
+                                                </li>
+                                            </ul>
+                                            <h5 class="fs-15 font-weight-semibold menu-label mt-3 mb-2">Contacts</h5>
+                                            <div class="side-menu p-0">
+                                                <div class="card-body p-0">
+                                                    <div class="list-group list-group-flush">
+                                                        <div class="list-group-item d-flex pl-0 pr-0 align-items-center">
+                                                            <div class="mr-2">
+                                                                <span class="avatar brround cover-image" data-image-src="assets/img/faces/12.jpg" style="background: url('assets/img/faces/12.jpg') center center;">
+                                                                    <span class="avatar-status bg-success"></span>
+                                                                </span>
+                                                            </div>
+                                                            <div class=""><a class="tx-14 ml-2" href="#">Mozelle</a></div>
+                                                            <div class="ml-auto">
+                                                                <a href="#" class="btn btn-sm btn-light btn-icon box-shadow-0 mr-1"><i class="fa fa-phone fs-10"></i></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="list-group-item d-flex pl-0 pr-0 align-items-center">
+                                                            <div class="mr-2">
+                                                                <span class="avatar brround cover-image" data-image-src="assets/img/faces/11.jpg" style="background: url('assets/img/faces/11.jpg') center center;"></span>
+                                                            </div>
+                                                            <div class=""><a class="tx-14 ml-2" href="#">Florinda</a></div>
+                                                            <div class="ml-auto">
+                                                                <a href="#" class="btn btn-sm btn-light btn-icon box-shadow-0 mr-1"><i class="fa fa-phone fs-10"></i></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="list-group-item d-flex pl-0 pr-0 align-items-center">
+                                                            <div class="mr-2">
+                                                                <span class="avatar brround cover-image" data-image-src="assets/img/faces/5.jpg" style="background: url('assets/img/faces/5.jpg') center center;">
+                                                                    <span class="avatar-status bg-success"></span>
+                                                                </span>
+                                                            </div>
+                                                            <div class=""><a class="tx-14 ml-2" href="#">lina Bernie</a></div>
+                                                            <div class="ml-auto">
+                                                                <a href="#" class="btn btn-sm btn-light btn-icon box-shadow-0 mr-1"><i class="fa fa-phone fs-10"></i></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="list-group-item d-flex pl-0 pr-0 align-items-center">
+                                                            <div class="mr-2">
+                                                                <span class="avatar brround cover-image" data-image-src="assets/img/faces/2.jpg" style="background: url('assets/img/faces/2.jpg') center center;">
+                                                                    <span class="avatar-status bg-success"></span>
+                                                                </span>
+                                                            </div>
+                                                            <div class=""><a class="tx-14 ml-2" href="#">Mclaughin</a></div>
+                                                            <div class="ml-auto">
+                                                                <a href="#" class="btn btn-sm btn-light btn-icon box-shadow-0 mr-1"><i class="fa fa-phone fs-10"></i></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <h2 class="resp-accordion hor_1" role="tab" aria-controls="hor_1_tab_item-6"><span class="resp-arrow"></span> <i class="side-menu__icon bx bx-envelope"></i><span class="menu__label">Mail</span></h2>
+                <li class="mail-admin resp-tab-content hor_1" aria-labelledby="hor_1_tab_item-6">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="panel sidetab-menu">
+                                <div class="user-info mb-1">
+                                    <div class="users-profile">
+                                        <a href="profile.html" class="user-profile-img"> <img src="assets/img/faces/6.jpg" alt="User" class="brround avatar-xl" /></a>
+                                        <div class="green_icon"></div>
+                                    </div>
+                                    <div class="social-details mt-2">
+                                        <h6 class="mb-0">Mack Adamia</h6>
+                                        <p class="mb-2 mt-1 text-muted tx-12">Administrator</p>
+                                        <a href="#"><i class="zmdi zmdi-facebook-box"></i></a> <a href="#"><i class="zmdi zmdi-linkedin-box"></i></a> <a href="#"><i class="zmdi zmdi-instagram"></i></a>
+                                        <a href="#"><i class="zmdi zmdi-twitter-box"></i></a>
+                                    </div>
+                                </div>
+                                <div class="panel-body tabs-menu-body p-0 border-0">
+                                    <div class="tab-content">
+                                        <div class="tab-pane active" id="side-21">
+                                            <div class="menu">
+                                                <h6 class="mb-2 menu-label">Utilities</h6>
+                                                <a class="slide-item" href="mail.html"><i class="las la-envelope-open"></i>Mail</a> <a class="slide-item" href="mail-compose.html"><i class="las la-comment-medical"></i>Compose mail</a>
+                                                <a class="slide-item" href="mail-read.html"><i class="las la-envelope-open-text"></i>Read mail</a>
+                                                <a class="slide-item" href="mail-settings.html"><i class="lab la-intercom"></i>Mail-settings</a> <a class="slide-item" href="chat.html"><i class="las la-comment-dots"></i>Chat</a>
+                                                <a class="slide-item" href="scrumboard.html"><i class="las la-vr-cardboard"></i>Scrumboard</a>
+                                            </div>
+                                            <h5 class="menu-label mt-3 mb-2">Account</h5>
+                                            <ul class="side-account pl-0">
+                                                <li class="acc-link">
+                                                    <a href="#"> <i class="las la-download text-success mr-2 tx-20"></i> Downloads </a>
+                                                </li>
+                                                <li class="acc-link">
+                                                    <a href="#"> <i class="las la-folder-open text-danger mr-2 tx-20"></i> Archive </a>
+                                                </li>
+                                                <li class="acc-link">
+                                                    <a href="#"> <i class="las la-rss-square text-purple mr-2 tx-20"></i> Feed Manager </a>
+                                                </li>
+                                                <li class="acc-link">
+                                                    <a href="#"> <i class="las la-cog text-primary my-auto mr-2 tx-20"></i> Settings </a>
+                                                </li>
+                                            </ul>
+                                            <h5 class="fs-15 font-weight-semibold menu-label mt-3 mb-2">Contacts</h5>
+                                            <div class="side-menu p-0">
+                                                <div class="card-body p-0">
+                                                    <div class="list-group list-group-flush">
+                                                        <div class="list-group-item d-flex pl-0 pr-0 align-items-center">
+                                                            <div class="mr-2">
+                                                                <span class="avatar brround cover-image" data-image-src="assets/img/faces/12.jpg" style="background: url('assets/img/faces/12.jpg') center center;">
+                                                                    <span class="avatar-status bg-success"></span>
+                                                                </span>
+                                                            </div>
+                                                            <div class=""><a class="tx-14 ml-2" href="#">Mozelle</a></div>
+                                                            <div class="ml-auto">
+                                                                <a href="#" class="btn btn-sm btn-light btn-icon box-shadow-0 mr-1"><i class="fa fa-phone fs-10"></i></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="list-group-item d-flex pl-0 pr-0 align-items-center">
+                                                            <div class="mr-2">
+                                                                <span class="avatar brround cover-image" data-image-src="assets/img/faces/11.jpg" style="background: url('assets/img/faces/11.jpg') center center;"></span>
+                                                            </div>
+                                                            <div class=""><a class="tx-14 ml-2" href="#">Florinda</a></div>
+                                                            <div class="ml-auto">
+                                                                <a href="#" class="btn btn-sm btn-light btn-icon box-shadow-0 mr-1"><i class="fa fa-phone fs-10"></i></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="list-group-item d-flex pl-0 pr-0 align-items-center">
+                                                            <div class="mr-2">
+                                                                <span class="avatar brround cover-image" data-image-src="assets/img/faces/5.jpg" style="background: url('assets/img/faces/5.jpg') center center;">
+                                                                    <span class="avatar-status bg-success"></span>
+                                                                </span>
+                                                            </div>
+                                                            <div class=""><a class="tx-14 ml-2" href="#">lina Bernie</a></div>
+                                                            <div class="ml-auto">
+                                                                <a href="#" class="btn btn-sm btn-light btn-icon box-shadow-0 mr-1"><i class="fa fa-phone fs-10"></i></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="list-group-item d-flex pl-0 pr-0 align-items-center">
+                                                            <div class="mr-2">
+                                                                <span class="avatar brround cover-image" data-image-src="assets/img/faces/2.jpg" style="background: url('assets/img/faces/2.jpg') center center;">
+                                                                    <span class="avatar-status bg-success"></span>
+                                                                </span>
+                                                            </div>
+                                                            <div class=""><a class="tx-14 ml-2" href="#">Mclaughin</a></div>
+                                                            <div class="ml-auto">
+                                                                <a href="#" class="btn btn-sm btn-light btn-icon box-shadow-0 mr-1"><i class="fa fa-phone fs-10"></i></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <h2 class="resp-accordion hor_1" role="tab" aria-controls="hor_1_tab_item-7">
+                    <span class="resp-arrow"></span> <i class="side-menu__icon bx bx-receipt"></i><span class="menu__label">Forms</span><span class="badge badge-danger menu-badge">6</span>
+                </h2>
+                <li class="forms-admin resp-tab-content hor_1" aria-labelledby="hor_1_tab_item-7">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="panel sidetab-menu">
+                                <div class="user-info mb-1">
+                                    <div class="users-profile">
+                                        <a href="profile.html" class="user-profile-img"> <img src="assets/img/faces/6.jpg" alt="User" class="brround avatar-xl" /></a>
+                                        <div class="green_icon"></div>
+                                    </div>
+                                    <div class="social-details mt-2">
+                                        <h6 class="mb-0">Mack Adamia</h6>
+                                        <p class="mb-2 mt-1 text-muted tx-12">Administrator</p>
+                                        <a href="#"><i class="zmdi zmdi-facebook-box"></i></a> <a href="#"><i class="zmdi zmdi-linkedin-box"></i></a> <a href="#"><i class="zmdi zmdi-instagram"></i></a>
+                                        <a href="#"><i class="zmdi zmdi-twitter-box"></i></a>
+                                    </div>
+                                </div>
+                                <div class="panel-body tabs-menu-body p-0 border-0">
+                                    <div class="tab-content">
+                                        <div class="tab-pane active" id="side21">
+                                            <div class="menu">
+                                                <h6 class="mb-2 menu-label">Forms</h6>
+                                                <a class="slide-item" href="form-elements.html"><i class="lab la-elementor"></i>Form Elements</a>
+                                                <a class="slide-item" href="form-element-sizes.html"><i class="las la-check-square"></i>Form Elements Size</a>
+                                                <a class="slide-item" href="form-advanced.html"><i class="lab la-wpforms"></i>Advanced Forms</a>
+                                                <a class="slide-item" href="form-layouts.html"><i class="las la-align-right"></i>Form Layouts</a>
+                                                <a class="slide-item" href="form-validation.html"><i class="las la-not-equal"></i>Form Validation</a>
+                                                <a class="slide-item" href="form-wizards.html"><i class="las la-underline"></i>Form Wizards</a> <a class="slide-item" href="form-editor.html"><i class="las la-edit"></i>WYSIWYG Editor</a>
+                                            </div>
+                                            <h5 class="menu-label mt-3 mb-2">Account</h5>
+                                            <ul class="side-account pl-0">
+                                                <li class="acc-link">
+                                                    <a href="#"> <i class="las la-download text-success mr-2 tx-20"></i> Downloads </a>
+                                                </li>
+                                                <li class="acc-link">
+                                                    <a href="#"> <i class="las la-folder-open text-danger mr-2 tx-20"></i> Archive </a>
+                                                </li>
+                                                <li class="acc-link">
+                                                    <a href="#"> <i class="las la-rss-square text-purple mr-2 tx-20"></i> Feed Manager </a>
+                                                </li>
+                                                <li class="acc-link">
+                                                    <a href="#"> <i class="las la-cog text-primary my-auto mr-2 tx-20"></i> Settings </a>
+                                                </li>
+                                            </ul>
+                                            <h5 class="fs-15 font-weight-semibold menu-label mt-3 mb-2">Contacts</h5>
+                                            <div class="side-menu p-0">
+                                                <div class="card-body p-0">
+                                                    <div class="list-group list-group-flush">
+                                                        <div class="list-group-item d-flex pl-0 pr-0 align-items-center">
+                                                            <div class="mr-2">
+                                                                <span class="avatar brround cover-image" data-image-src="assets/img/faces/12.jpg" style="background: url('assets/img/faces/12.jpg') center center;">
+                                                                    <span class="avatar-status bg-success"></span>
+                                                                </span>
+                                                            </div>
+                                                            <div class=""><a class="tx-14 ml-2" href="#">Mozelle</a></div>
+                                                            <div class="ml-auto">
+                                                                <a href="#" class="btn btn-sm btn-light btn-icon box-shadow-0 mr-1"><i class="fa fa-phone fs-10"></i></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="list-group-item d-flex pl-0 pr-0 align-items-center">
+                                                            <div class="mr-2">
+                                                                <span class="avatar brround cover-image" data-image-src="assets/img/faces/11.jpg" style="background: url('assets/img/faces/11.jpg') center center;"></span>
+                                                            </div>
+                                                            <div class=""><a class="tx-14 ml-2" href="#">Florinda</a></div>
+                                                            <div class="ml-auto">
+                                                                <a href="#" class="btn btn-sm btn-light btn-icon box-shadow-0 mr-1"><i class="fa fa-phone fs-10"></i></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="list-group-item d-flex pl-0 pr-0 align-items-center">
+                                                            <div class="mr-2">
+                                                                <span class="avatar brround cover-image" data-image-src="assets/img/faces/5.jpg" style="background: url('assets/img/faces/5.jpg') center center;">
+                                                                    <span class="avatar-status bg-success"></span>
+                                                                </span>
+                                                            </div>
+                                                            <div class=""><a class="tx-14 ml-2" href="#">lina Bernie</a></div>
+                                                            <div class="ml-auto">
+                                                                <a href="#" class="btn btn-sm btn-light btn-icon box-shadow-0 mr-1"><i class="fa fa-phone fs-10"></i></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="list-group-item d-flex pl-0 pr-0 align-items-center">
+                                                            <div class="mr-2">
+                                                                <span class="avatar brround cover-image" data-image-src="assets/img/faces/2.jpg" style="background: url('assets/img/faces/2.jpg') center center;">
+                                                                    <span class="avatar-status bg-success"></span>
+                                                                </span>
+                                                            </div>
+                                                            <div class=""><a class="tx-14 ml-2" href="#">Mclaughin</a></div>
+                                                            <div class="ml-auto">
+                                                                <a href="#" class="btn btn-sm btn-light btn-icon box-shadow-0 mr-1"><i class="fa fa-phone fs-10"></i></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <h2 class="resp-accordion hor_1" role="tab" aria-controls="hor_1_tab_item-8"><span class="resp-arrow"></span> <i class="side-menu__icon bx bx-pie-chart-alt"></i><span class="menu__label">Charts</span></h2>
+                <li class="charts-admin resp-tab-content hor_1" aria-labelledby="hor_1_tab_item-8">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="panel sidetab-menu">
+                                <div class="user-info mb-1">
+                                    <div class="users-profile">
+                                        <a href="profile.html" class="user-profile-img"> <img src="assets/img/faces/6.jpg" alt="User" class="brround avatar-xl" /></a>
+                                        <div class="green_icon"></div>
+                                    </div>
+                                    <div class="social-details mt-2">
+                                        <h6 class="mb-0">Mack Adamia</h6>
+                                        <p class="mb-2 mt-1 text-muted tx-12">Administrator</p>
+                                        <a href="#"><i class="zmdi zmdi-facebook-box"></i></a> <a href="#"><i class="zmdi zmdi-linkedin-box"></i></a> <a href="#"><i class="zmdi zmdi-instagram"></i></a>
+                                        <a href="#"><i class="zmdi zmdi-twitter-box"></i></a>
+                                    </div>
+                                </div>
+                                <div class="panel-body tabs-menu-body p-0 border-0">
+                                    <div class="tab-content">
+                                        <div class="tab-pane active" id="side31">
+                                            <div class="menu">
+                                                <h6 class="mb-2 menu-label">Charts</h6>
+                                                <a class="slide-item" href="chart-morris.html"><i class="las la-chart-bar"></i>Morris Charts</a>
+                                                <a class="slide-item" href="chart-flot.html"><i class="las la-chart-line"></i>Flot Charts</a> <a class="slide-item" href="chart-chartjs.html"><i class="las la-chart-pie"></i>ChartJS</a>
+                                                <a class="slide-item" href="chart-echart.html"><i class="las la-chart-area"></i>Echart</a>
+                                                <a class="slide-item" href="chart-sparkline.html"><i class="las la-project-diagram"></i>Sparkline</a> <a class="slide-item" href="chart-peity.html"><i class="las la-signal"></i>Peity</a>
+                                            </div>
+                                            <h5 class="menu-label mt-3 mb-2">Account</h5>
+                                            <ul class="side-account pl-0">
+                                                <li class="acc-link">
+                                                    <a href="#"> <i class="las la-download text-success mr-2 tx-20"></i> Downloads </a>
+                                                </li>
+                                                <li class="acc-link">
+                                                    <a href="#"> <i class="las la-folder-open text-danger mr-2 tx-20"></i> Archive </a>
+                                                </li>
+                                                <li class="acc-link">
+                                                    <a href="#"> <i class="las la-rss-square text-purple mr-2 tx-20"></i> Feed Manager </a>
+                                                </li>
+                                                <li class="acc-link">
+                                                    <a href="#"> <i class="las la-cog text-primary my-auto mr-2 tx-20"></i> Settings </a>
+                                                </li>
+                                            </ul>
+                                            <h5 class="fs-15 font-weight-semibold menu-label mt-3 mb-2">Contacts</h5>
+                                            <div class="side-menu p-0">
+                                                <div class="card-body p-0">
+                                                    <div class="list-group list-group-flush">
+                                                        <div class="list-group-item d-flex pl-0 pr-0 align-items-center">
+                                                            <div class="mr-2">
+                                                                <span class="avatar brround cover-image" data-image-src="assets/img/faces/12.jpg" style="background: url('assets/img/faces/12.jpg') center center;">
+                                                                    <span class="avatar-status bg-success"></span>
+                                                                </span>
+                                                            </div>
+                                                            <div class=""><a class="tx-14 ml-2" href="#">Mozelle</a></div>
+                                                            <div class="ml-auto">
+                                                                <a href="#" class="btn btn-sm btn-light btn-icon box-shadow-0 mr-1"><i class="fa fa-phone fs-10"></i></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="list-group-item d-flex pl-0 pr-0 align-items-center">
+                                                            <div class="mr-2">
+                                                                <span class="avatar brround cover-image" data-image-src="assets/img/faces/11.jpg" style="background: url('assets/img/faces/11.jpg') center center;"></span>
+                                                            </div>
+                                                            <div class=""><a class="tx-14 ml-2" href="#">Florinda</a></div>
+                                                            <div class="ml-auto">
+                                                                <a href="#" class="btn btn-sm btn-light btn-icon box-shadow-0 mr-1"><i class="fa fa-phone fs-10"></i></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="list-group-item d-flex pl-0 pr-0 align-items-center">
+                                                            <div class="mr-2">
+                                                                <span class="avatar brround cover-image" data-image-src="assets/img/faces/5.jpg" style="background: url('assets/img/faces/5.jpg') center center;">
+                                                                    <span class="avatar-status bg-success"></span>
+                                                                </span>
+                                                            </div>
+                                                            <div class=""><a class="tx-14 ml-2" href="#">lina Bernie</a></div>
+                                                            <div class="ml-auto">
+                                                                <a href="#" class="btn btn-sm btn-light btn-icon box-shadow-0 mr-1"><i class="fa fa-phone fs-10"></i></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="list-group-item d-flex pl-0 pr-0 align-items-center">
+                                                            <div class="mr-2">
+                                                                <span class="avatar brround cover-image" data-image-src="assets/img/faces/2.jpg" style="background: url('assets/img/faces/2.jpg') center center;">
+                                                                    <span class="avatar-status bg-success"></span>
+                                                                </span>
+                                                            </div>
+                                                            <div class=""><a class="tx-14 ml-2" href="#">Mclaughin</a></div>
+                                                            <div class="ml-auto">
+                                                                <a href="#" class="btn btn-sm btn-light btn-icon box-shadow-0 mr-1"><i class="fa fa-phone fs-10"></i></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <h2 class="resp-accordion hor_1" role="tab" aria-controls="hor_1_tab_item-9"><span class="resp-arrow"></span> <i class="side-menu__icon bx bx-notepad"></i><span class="menu__label">Pages</span></h2>
+                <li class="pages-admin resp-tab-content hor_1" aria-labelledby="hor_1_tab_item-9">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="panel sidetab-menu">
+                                <div class="user-info mb-1">
+                                    <div class="users-profile">
+                                        <a href="profile.html" class="user-profile-img"> <img src="assets/img/faces/6.jpg" alt="User" class="brround avatar-xl" /></a>
+                                        <div class="green_icon"></div>
+                                    </div>
+                                    <div class="social-details mt-2">
+                                        <h6 class="mb-0">Mack Adamia</h6>
+                                        <p class="mb-2 mt-1 text-muted tx-12">Administrator</p>
+                                        <a href="#"><i class="zmdi zmdi-facebook-box"></i></a> <a href="#"><i class="zmdi zmdi-linkedin-box"></i></a> <a href="#"><i class="zmdi zmdi-instagram"></i></a>
+                                        <a href="#"><i class="zmdi zmdi-twitter-box"></i></a>
+                                    </div>
+                                </div>
+                                <div class="panel-body tabs-menu-body p-0 border-0">
+                                    <div class="tab-content">
+                                        <div class="tab-pane active" id="side41">
+                                            <div class="menu">
+                                                <h6 class="mb-2 menu-label">Pages</h6>
+                                                <div class="side-menu p-0">
+                                                    <div class="slide submenu">
+                                                        <a class="side-menu__item" data-toggle="slide" href="#"><i class="las la-user-circle"></i> <span class="side-menu__label">Pages</span><i class="angle fe fe-chevron-down"></i></a>
+                                                        <ul class="slide-menu submenu-list">
+                                                            <li><a href="profile.html" class="slide-item">Profile</a></li>
+                                                            <li><a href="editprofile.html" class="slide-item">Edit-profile</a></li>
+                                                            <li><a href="account-setting.html" class="slide-item">Account-setting</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="side-menu p-0">
+                                                    <div class="slide submenu">
+                                                        <a class="side-menu__item" data-toggle="slide" href="#"><i class="las la-receipt"></i> <span class="side-menu__label">Invoice</span><i class="angle fe fe-chevron-down"></i></a>
+                                                        <ul class="slide-menu submenu-list">
+                                                            <li><a href="invoice.html" class="slide-item">Invoice</a></li>
+                                                            <li><a href="invoice2.html" class="slide-item">Invoice2</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <a class="slide-item" href="pricing.html"><i class="las la-money-check"></i>Pricing</a> <a class="slide-item" href="gallery.html"><i class="las la-image"></i>Gallery</a>
+                                                <a class="slide-item" href="faq.html"><i class="las la-question-circle"></i>Faqs</a> <a class="slide-item" href="empty.html"><i class="las la-folder-open"></i>Empty pages</a>
+                                            </div>
+                                            <h5 class="menu-label mt-3 mb-2">Account</h5>
+                                            <ul class="side-account pl-0">
+                                                <li class="acc-link">
+                                                    <a href="#"> <i class="las la-download text-success mr-2 tx-20"></i> Downloads </a>
+                                                </li>
+                                                <li class="acc-link">
+                                                    <a href="#"> <i class="las la-folder-open text-danger mr-2 tx-20"></i> Archive </a>
+                                                </li>
+                                                <li class="acc-link">
+                                                    <a href="#"> <i class="las la-rss-square text-purple mr-2 tx-20"></i> Feed Manager </a>
+                                                </li>
+                                                <li class="acc-link">
+                                                    <a href="#"> <i class="las la-cog text-primary my-auto mr-2 tx-20"></i> Settings </a>
+                                                </li>
+                                            </ul>
+                                            <h5 class="fs-15 font-weight-semibold menu-label mt-3 mb-2">Contacts</h5>
+                                            <div class="side-menu p-0">
+                                                <div class="card-body p-0">
+                                                    <div class="list-group list-group-flush">
+                                                        <div class="list-group-item d-flex pl-0 pr-0 align-items-center">
+                                                            <div class="mr-2">
+                                                                <span class="avatar brround cover-image" data-image-src="assets/img/faces/12.jpg" style="background: url('assets/img/faces/12.jpg') center center;">
+                                                                    <span class="avatar-status bg-success"></span>
+                                                                </span>
+                                                            </div>
+                                                            <div class=""><a class="tx-14 ml-2" href="#">Mozelle</a></div>
+                                                            <div class="ml-auto">
+                                                                <a href="#" class="btn btn-sm btn-light btn-icon box-shadow-0 mr-1"><i class="fa fa-phone fs-10"></i></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="list-group-item d-flex pl-0 pr-0 align-items-center">
+                                                            <div class="mr-2">
+                                                                <span class="avatar brround cover-image" data-image-src="assets/img/faces/11.jpg" style="background: url('assets/img/faces/11.jpg') center center;"></span>
+                                                            </div>
+                                                            <div class=""><a class="tx-14 ml-2" href="#">Florinda</a></div>
+                                                            <div class="ml-auto">
+                                                                <a href="#" class="btn btn-sm btn-light btn-icon box-shadow-0 mr-1"><i class="fa fa-phone fs-10"></i></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="list-group-item d-flex pl-0 pr-0 align-items-center">
+                                                            <div class="mr-2">
+                                                                <span class="avatar brround cover-image" data-image-src="assets/img/faces/5.jpg" style="background: url('assets/img/faces/5.jpg') center center;">
+                                                                    <span class="avatar-status bg-success"></span>
+                                                                </span>
+                                                            </div>
+                                                            <div class=""><a class="tx-14 ml-2" href="#">lina Bernie</a></div>
+                                                            <div class="ml-auto">
+                                                                <a href="#" class="btn btn-sm btn-light btn-icon box-shadow-0 mr-1"><i class="fa fa-phone fs-10"></i></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="list-group-item d-flex pl-0 pr-0 align-items-center">
+                                                            <div class="mr-2">
+                                                                <span class="avatar brround cover-image" data-image-src="assets/img/faces/2.jpg" style="background: url('assets/img/faces/2.jpg') center center;">
+                                                                    <span class="avatar-status bg-success"></span>
+                                                                </span>
+                                                            </div>
+                                                            <div class=""><a class="tx-14 ml-2" href="#">Mclaughin</a></div>
+                                                            <div class="ml-auto">
+                                                                <a href="#" class="btn btn-sm btn-light btn-icon box-shadow-0 mr-1"><i class="fa fa-phone fs-10"></i></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <h2 class="resp-accordion hor_1" role="tab" aria-controls="hor_1_tab_item-10">
+                    <span class="resp-arrow"></span><span class="badge badge-pink menu-badge">3</span> <i class="side-menu__icon bx bx-store"></i><span class="menu__label">E-commerce</span>
+                </h2>
+                <li class="ecommerce-admin resp-tab-content hor_1" aria-labelledby="hor_1_tab_item-10">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="panel sidetab-menu">
+                                <div class="user-info mb-1">
+                                    <div class="users-profile">
+                                        <a href="profile.html" class="user-profile-img"> <img src="assets/img/faces/6.jpg" alt="User" class="brround avatar-xl" /></a>
+                                        <div class="green_icon"></div>
+                                    </div>
+                                    <div class="social-details mt-2">
+                                        <h6 class="mb-0">Mack Adamia</h6>
+                                        <p class="mb-2 mt-1 text-muted tx-12">Administrator</p>
+                                        <a href="#"><i class="zmdi zmdi-facebook-box"></i></a> <a href="#"><i class="zmdi zmdi-linkedin-box"></i></a> <a href="#"><i class="zmdi zmdi-instagram"></i></a>
+                                        <a href="#"><i class="zmdi zmdi-twitter-box"></i></a>
+                                    </div>
+                                </div>
+                                <div class="panel-body tabs-menu-body p-0 border-0">
+                                    <div class="tab-content">
+                                        <div class="tab-pane active" id="side51">
+                                            <div class="menu">
+                                                <h6 class="mb-2 menu-label">E-Commerce</h6>
+                                                <a class="slide-item" href="products.html"><i class="lab la-product-hunt"></i>Products</a>
+                                                <a class="slide-item" href="product-details.html"><i class="las la-info-circle"></i>Product-Details</a>
+                                                <a class="slide-item" href="product-whishlist.html"><i class="lab la-gratipay"></i>Product-whishlist</a>
+                                                <a class="slide-item" href="product-cart.html"><i class="las la-shopping-cart"></i>Cart</a>
+                                                <a class="slide-item" href="product-invoice.html"><i class="las la-file-invoice"></i>Product-invoice</a>
+                                            </div>
+                                            <h5 class="menu-label mt-3 mb-2">Account</h5>
+                                            <ul class="side-account pl-0">
+                                                <li class="acc-link">
+                                                    <a href="#"> <i class="las la-download text-success mr-2 tx-20"></i> Downloads </a>
+                                                </li>
+                                                <li class="acc-link">
+                                                    <a href="#"> <i class="las la-folder-open text-danger mr-2 tx-20"></i> Archive </a>
+                                                </li>
+                                                <li class="acc-link">
+                                                    <a href="#"> <i class="las la-rss-square text-purple mr-2 tx-20"></i> Feed Manager </a>
+                                                </li>
+                                                <li class="acc-link">
+                                                    <a href="#"> <i class="las la-cog text-primary my-auto mr-2 tx-20"></i> Settings </a>
+                                                </li>
+                                            </ul>
+                                            <h5 class="fs-15 font-weight-semibold menu-label mt-3 mb-2">Contacts</h5>
+                                            <div class="side-menu p-0">
+                                                <div class="card-body p-0">
+                                                    <div class="list-group list-group-flush">
+                                                        <div class="list-group-item d-flex pl-0 pr-0 align-items-center">
+                                                            <div class="mr-2">
+                                                                <span class="avatar brround cover-image" data-image-src="assets/img/faces/12.jpg" style="background: url('assets/img/faces/12.jpg') center center;">
+                                                                    <span class="avatar-status bg-success"></span>
+                                                                </span>
+                                                            </div>
+                                                            <div class=""><a class="tx-14 ml-2" href="#">Mozelle</a></div>
+                                                            <div class="ml-auto">
+                                                                <a href="#" class="btn btn-sm btn-light btn-icon box-shadow-0 mr-1"><i class="fa fa-phone fs-10"></i></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="list-group-item d-flex pl-0 pr-0 align-items-center">
+                                                            <div class="mr-2">
+                                                                <span class="avatar brround cover-image" data-image-src="assets/img/faces/11.jpg" style="background: url('assets/img/faces/11.jpg') center center;"></span>
+                                                            </div>
+                                                            <div class=""><a class="tx-14 ml-2" href="#">Florinda</a></div>
+                                                            <div class="ml-auto">
+                                                                <a href="#" class="btn btn-sm btn-light btn-icon box-shadow-0 mr-1"><i class="fa fa-phone fs-10"></i></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="list-group-item d-flex pl-0 pr-0 align-items-center">
+                                                            <div class="mr-2">
+                                                                <span class="avatar brround cover-image" data-image-src="assets/img/faces/5.jpg" style="background: url('assets/img/faces/5.jpg') center center;">
+                                                                    <span class="avatar-status bg-success"></span>
+                                                                </span>
+                                                            </div>
+                                                            <div class=""><a class="tx-14 ml-2" href="#">lina Bernie</a></div>
+                                                            <div class="ml-auto">
+                                                                <a href="#" class="btn btn-sm btn-light btn-icon box-shadow-0 mr-1"><i class="fa fa-phone fs-10"></i></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="list-group-item d-flex pl-0 pr-0 align-items-center">
+                                                            <div class="mr-2">
+                                                                <span class="avatar brround cover-image" data-image-src="assets/img/faces/2.jpg" style="background: url('assets/img/faces/2.jpg') center center;">
+                                                                    <span class="avatar-status bg-success"></span>
+                                                                </span>
+                                                            </div>
+                                                            <div class=""><a class="tx-14 ml-2" href="#">Mclaughin</a></div>
+                                                            <div class="ml-auto">
+                                                                <a href="#" class="btn btn-sm btn-light btn-icon box-shadow-0 mr-1"><i class="fa fa-phone fs-10"></i></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <h2 class="resp-accordion hor_1" role="tab" aria-controls="hor_1_tab_item-11"><span class="resp-arrow"></span> <i class="side-menu__icon bx bx-user-circle"></i><span class="menu__label">Custom</span></h2>
+                <li class="custom-admin resp-tab-content hor_1" aria-labelledby="hor_1_tab_item-11">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="panel sidetab-menu">
+                                <div class="user-info mb-1">
+                                    <div class="users-profile">
+                                        <a href="profile.html" class="user-profile-img"> <img src="assets/img/faces/6.jpg" alt="User" class="brround avatar-xl" /></a>
+                                        <div class="green_icon"></div>
+                                    </div>
+                                    <div class="social-details mt-2">
+                                        <h6 class="mb-0">Mack Adamia</h6>
+                                        <p class="mb-2 mt-1 text-muted tx-12">Administrator</p>
+                                        <a href="#"><i class="zmdi zmdi-facebook-box"></i></a> <a href="#"><i class="zmdi zmdi-linkedin-box"></i></a> <a href="#"><i class="zmdi zmdi-instagram"></i></a>
+                                        <a href="#"><i class="zmdi zmdi-twitter-box"></i></a>
+                                    </div>
+                                </div>
+                                <div class="panel-body tabs-menu-body p-0 border-0">
+                                    <div class="tab-content">
+                                        <div class="tab-pane active" id="side61">
+                                            <div class="menu">
+                                                <h6 class="mb-2 menu-label">Custom Pages</h6>
+                                                <a class="slide-item" href="signin.html"><i class="las la-sign-in-alt"></i>Sign In</a> <a class="slide-item" href="signup.html"><i class="las la-sign-out-alt"></i>Sign Up</a>
+                                                <a class="slide-item" href="forgot.html"><i class="las la-question-circle"></i>Forgot Password</a>
+                                                <a class="slide-item" href="reset.html"><i class="las la-redo-alt"></i>Reset Password</a> <a class="slide-item" href="lockscreen.html"><i class="las la-user-lock"></i>Lockscreen</a>
+                                                <a class="slide-item" href="underconstruction.html"><i class="las la-wrench"></i>UnderConstruction</a>
+                                                <a class="slide-item" href="404.html"><i class="las la-exclamation-triangle"></i>404 Error</a> <a class="slide-item" href="500.html"><i class="las la-exclamation-circle"></i>500 Error</a>
+                                            </div>
+                                            <h5 class="menu-label mt-3 mb-2">Account</h5>
+                                            <ul class="side-account pl-0">
+                                                <li class="acc-link">
+                                                    <a href="#"> <i class="las la-download text-success mr-2 tx-20"></i> Downloads </a>
+                                                </li>
+                                                <li class="acc-link">
+                                                    <a href="#"> <i class="las la-folder-open text-danger mr-2 tx-20"></i> Archive </a>
+                                                </li>
+                                                <li class="acc-link">
+                                                    <a href="#"> <i class="las la-rss-square text-purple mr-2 tx-20"></i> Feed Manager </a>
+                                                </li>
+                                                <li class="acc-link">
+                                                    <a href="#"> <i class="las la-cog text-primary my-auto mr-2 tx-20"></i> Settings </a>
+                                                </li>
+                                            </ul>
+                                            <h5 class="fs-15 font-weight-semibold menu-label mt-3 mb-2">Contacts</h5>
+                                            <div class="side-menu p-0">
+                                                <div class="card-body p-0">
+                                                    <div class="list-group list-group-flush">
+                                                        <div class="list-group-item d-flex pl-0 pr-0 align-items-center">
+                                                            <div class="mr-2">
+                                                                <span class="avatar brround cover-image" data-image-src="assets/img/faces/12.jpg" style="background: url('assets/img/faces/12.jpg') center center;">
+                                                                    <span class="avatar-status bg-success"></span>
+                                                                </span>
+                                                            </div>
+                                                            <div class=""><a class="tx-14 ml-2" href="#">Mozelle</a></div>
+                                                            <div class="ml-auto">
+                                                                <a href="#" class="btn btn-sm btn-light btn-icon box-shadow-0 mr-1"><i class="fa fa-phone fs-10"></i></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="list-group-item d-flex pl-0 pr-0 align-items-center">
+                                                            <div class="mr-2">
+                                                                <span class="avatar brround cover-image" data-image-src="assets/img/faces/11.jpg" style="background: url('assets/img/faces/11.jpg') center center;"></span>
+                                                            </div>
+                                                            <div class=""><a class="tx-14 ml-2" href="#">Florinda</a></div>
+                                                            <div class="ml-auto">
+                                                                <a href="#" class="btn btn-sm btn-light btn-icon box-shadow-0 mr-1"><i class="fa fa-phone fs-10"></i></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="list-group-item d-flex pl-0 pr-0 align-items-center">
+                                                            <div class="mr-2">
+                                                                <span class="avatar brround cover-image" data-image-src="assets/img/faces/5.jpg" style="background: url('assets/img/faces/5.jpg') center center;">
+                                                                    <span class="avatar-status bg-success"></span>
+                                                                </span>
+                                                            </div>
+                                                            <div class=""><a class="tx-14 ml-2" href="#">lina Bernie</a></div>
+                                                            <div class="ml-auto">
+                                                                <a href="#" class="btn btn-sm btn-light btn-icon box-shadow-0 mr-1"><i class="fa fa-phone fs-10"></i></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="list-group-item d-flex pl-0 pr-0 align-items-center">
+                                                            <div class="mr-2">
+                                                                <span class="avatar brround cover-image" data-image-src="assets/img/faces/2.jpg" style="background: url('assets/img/faces/2.jpg') center center;">
+                                                                    <span class="avatar-status bg-success"></span>
+                                                                </span>
+                                                            </div>
+                                                            <div class=""><a class="tx-14 ml-2" href="#">Mclaughin</a></div>
+                                                            <div class="ml-auto">
+                                                                <a href="#" class="btn btn-sm btn-light btn-icon box-shadow-0 mr-1"><i class="fa fa-phone fs-10"></i></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="ps__rail-x" style="left: 0px; top: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div>
+            <div class="ps__rail-y" style="top: 0px; height: 625px; right: -2px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 30px;"></div></div>
+            <div class="ps__rail-x" style="left: 0px; top: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div>
+            <div class="ps__rail-y" style="top: 0px; height: 625px; right: -2px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 354px;"></div></div>
+        </nav>
+    </div>
+</aside>
+<!-- Sidemenu closed -->
+
+
+<script>
+    $(function () {
+      $('#myList a:last-child').tab('show')
+    })
+  </script>

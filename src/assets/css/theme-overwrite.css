@@ -1,0 +1,299 @@
+
+
+
+.resp-tabs-list li i {font-size: 20px;}
+button { border: none !important;}
+.text-slate-500 {
+    color: #444;
+}
+.text-slate-700 {
+    color: #1e1e1e;
+}
+.sentiment-analysis {min-height: 600px;}
+.document-sec { height: 850px; overflow: auto;}
+.document-view { line-height: 21px; font-size: 12px;}
+
+.sentiment-analysis p{margin-bottom: 0px;
+    }
+.cursor-pointer {
+    cursor: pointer;
+  }
+.ner-info b {
+    background-color: #fddcd6;
+    font-weight: 500;
+    padding: 0px 1px;
+}
+.sentiment-info b{
+    background-color:#3CCF4E;
+    font-weight: 500;
+    padding: 0px 1px;
+}
+.sentiment-info i{
+    background-color:#FF1E00;
+    font-weight: 500;
+    padding: 0px 1px;
+}
+.upload-file-sec { 
+    width: 500px;
+    border: 2px dotted #ddd;
+    height: 200px;
+    margin: 0px auto;
+    padding: 5% 2%; text-align: center;
+}
+
+.upload-status{ width: 50%; margin: 0px auto;} 
+
+
+
+/* upload styles */
+
+.ConfigurationTypes_downloadCsv {
+    width: 60%;
+    margin: 30px auto 0;
+    text-align: center;
+}
+
+.ConfigurationTypes_downloadFile {
+    height: 55px;
+    margin: 24px 0;
+    padding: 15px 16px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+}
+
+.ConfigurationTypes_downloadFile .ConfigurationTypes_fileIcon {
+    float: left;
+    background: #f4f4f4;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+.ConfigurationTypes_downloadFile .ConfigurationTypes_fileName {
+    font-size: 14px;
+    float: left;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #747474;
+    padding-top: 2px;
+    padding-left: 10px;
+    width: 70%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-align: left;
+}
+
+.ConfigurationTypes_downloadFile .ConfigurationTypes_fileDownload {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #ebeeff;
+    float: right;
+    cursor: pointer;
+}
+
+.ConfigurationTypes_downloadCsv h4 {
+    font-size: 16px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #242424;
+    word-break: break-all;
+}
+
+.ConfigurationTypes_dorpZoneArea {
+    min-width: 380px;
+    min-height: 161px;
+    margin: 0 0 16px;
+    padding: 16px;
+    border-radius: 6px;
+    border: 2px dashed #cdd5fe;
+    background-color: #f7f8fc;
+    cursor: pointer;
+}
+
+.ConfigurationTypes_configTypedrag-riles .ConfigurationTypes_dropMessage {
+    text-align: center;
+    color: #cdd5fe;
+    font-family: Arial;
+    font-size: 20px;
+}
+
+.ConfigurationTypes_noteInfo {
+    font-size: 14px;
+    color: #747474;
+}
+
+.form {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    border: 3px dashed grey;
+    border-radius: 10px;
+}
+
+.form div {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 90px;
+    color: black;
+    font-family: Arial;
+    position: absolute;
+    top: 0%;
+    z-index: 1;
+    background: whitesmoke;
+}
+
+.form input {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    opacity: 0;
+    z-index: 99
+}
+
+.form button {
+    border-radius: 10px;
+    padding: 7px 20px;
+    background: #ec7b05;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+}
+
+.btn-rounded {
+    border-radius: 25px;
+    padding: 0 30px;
+    height: 45px;
+    min-width: 180px;
+    margin-right: 15px;
+}
+
+#fileName::before {
+    content: 'File Name:';
+}
+
+#fileName {
+    position: relative;
+    top: 10px;
+}
+
+#upload {
+    margin-top: 1rem;
+}
+
+.drag-riles {
+    height: 250px;
+    padding: 2rem;
+    text-align: center;
+    border: dashed 1px #979797;
+    position: relative;
+    margin: 0 auto;
+    background: #fff;
+}
+
+.drag-riles input {
+    opacity: 0;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.drag-riles label {
+    color: white;
+    width: 183px;
+    height: 44px;
+    border-radius: 21.5px;
+    background-color: #4442a3;
+    padding: 8px 16px;
+}
+
+.drag-riles h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #38424c;
+}
+
+.mat-dialog-container {
+    min-width: 300px !important;
+    position: relative;
+}
+
+.mat-dialog-container .btn {
+    height: 38px;
+    min-width: 80px;
+}
+
+.fileover {
+    animation: shake 1s;
+    animation-iteration-count: infinite;
+}
+
+.files-list {
+    margin-top: 1.5rem;
+}
+
+.files-list .single-file {
+    display: flex;
+    padding: 0.5rem;
+    justify-content: space-between;
+    align-items: center;
+    border: dashed 1px #979797;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-grow: 1;
+}
+
+.files-list .single-file .delete {
+    display: flex;
+    margin-left: 0.5rem;
+    cursor: pointer;
+    align-self: flex-end;
+}
+
+.files-list .single-file .name {
+    font-size: 14px;
+    font-weight: 500;
+    color: #353f4a;
+    margin: 0;
+}
+
+.files-list .single-file .size {
+    font-size: 12px;
+    font-weight: 500;
+    color: #a4a4a4;
+    margin: 0;
+    margin-bottom: 0.25rem;
+}
+
+.files-list .single-file .info {
+    width: 100%;
+}
+
+.mat-form-field { width: 100%;}
+
+
+
+
+
+
+
+
+
+
+
+
+
