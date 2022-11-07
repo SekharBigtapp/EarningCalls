@@ -7,9 +7,11 @@ import { WordCloudComponent } from './modules/word-cloud/word-cloud.component';
 import { UploadDocumentComponent } from './modules/upload-document/upload-document.component';
 import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
+import { DashboardComponent } from './modules/dashboard/dashboard.component';
 
 const routes: Routes = [
    {path: '',component:LoginComponent},
+   {path: 'dashboard',component:DashboardComponent},
    {path: 'register',component:RegisterComponent},
   { path: 'sentimentanalysiscomponent', component: SentimentAnalysisComponent },
   { path: 'nameEntityRecz', component: NamedEntitiesRecgComponent },
