@@ -16,10 +16,12 @@ export class SentimentAnalysisComponent implements OnInit {
   financial: any;
   marketposition: any;
   legal: any;
+  headwinds: any
 
   financialpercentage: any;
   marketpositionpercentage: any;
   legalpercentage: any
+  headwindspercentage: any
 
   constructor(public http: HttpClient, public router: Router) {
     this.http.get('http://18.139.84.119:5003/pn', { responseType: 'text' }).subscribe((res) => {
@@ -40,16 +42,15 @@ export class SentimentAnalysisComponent implements OnInit {
       this.financial = [this.data_2[6], this.data_2[8], this.data_2[7]]
       this.marketposition = [this.data_2[3], this.data_2[5], this.data_2[4]]
       this.legal = [this.data_2[0], this.data_2[2], this.data_2[1]]
+      this.headwinds = [this.data_2[0] + this.data_2[3] + this.data_2[6], this.data_2[2] + this.data_2[5] + this.data_2[8], this.data_2[1] + this.data_2[4] + this.data_2[7]]
 
       this.financialpercentage = this.calculatepercentage(this.financial)
-      console.log(this.financialpercentage);
 
       this.marketpositionpercentage = this.calculatepercentage(this.marketposition)
-      console.log(this.marketpositionpercentage);
 
       this.legalpercentage = this.calculatepercentage(this.legal)
-      console.log(this.legalpercentage);
 
+      this.headwindspercentage = this.calculatepercentage(this.headwinds)
 
 
 
@@ -75,6 +76,8 @@ export class SentimentAnalysisComponent implements OnInit {
     const positive = Math.round((values[0] / sum) * 100)
     const negative = Math.round((values[2] / sum) * 100)
     const neutral = Math.round((values[1] / sum) * 100)
+    const totalpercentage = positive + negative + neutral
+    console.log({ positive, negative, neutral, totalpercentage });
 
 
     return [positive, neutral, negative]
