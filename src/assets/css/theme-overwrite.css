@@ -287,12 +287,41 @@ button { border: none !important;}
 
 
 
+  .main-content app-login{
+    position: absolute;
+    width: 100%;
+    z-index: +999;
+    background: #fff;
+    margin-top: -60px;
+    left: 5%;
+  }
+    
 
-
-
-
-
-
+  .tile {
+    width: 100%;
+    display: inline-block;
+    box-sizing: border-box;
+    background: #fff;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+}
+.tile .title {
+    margin-top: 0px;
+}
+.bg-slate-100 {
+    background-color: #f1f5f9;
+}
+.dashboard-tails .col-sm-3{ position: relative;}
+.dashboard-tails i { font-size: 24px; position: absolute;  right: 15px;}
+.text-slate-400 {
+    color: #94a3b8;
+}
+.text-slate-600 {
+    color: #475569;
+}
+.font-medium {
+    font-weight: 500;
+}
 
 
 

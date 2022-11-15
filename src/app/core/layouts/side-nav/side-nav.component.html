@@ -7,7 +7,7 @@
     <div class="side-tab-body p-0 border-0 resp-vtabs hor_1" id="sidemenu-Tab" style="display: block; width: 100%; margin: 0px;">
         <nav class="first-sidemenu ps ps--active-y">
             <div class="text-center">
-                <a href="index.html" class="active"></a><a href="index.html" class="active"><img src="assets/img/brand/bigtapp-icon.png" class="fav-icon" alt="image" /></a>
+                <a href="#" class="active"></a><a href="#" class="active"><img src="assets/img/brand/bigtapp-icon.png" class="fav-icon" alt="image" /></a>
             </div>
             <ul class="resp-tabs-list hor_1" id="myList" style="margin-top: 3px;">
                 <li class="dashboard-admin resp-tab-item hor_1" [ngClass]="{'active': navLinkId == '1'}" data-toggle="tooltip" data-placement="right" title="" data-original-title="Dashboard" (click)="onClickMenu(1)" aria-controls="hor_1_tab_item-0" href="#dashboard" role="tab">
@@ -21,11 +21,11 @@
                 [ngClass]="{'active': navLinkId == '3'}" title="" data-original-title="Apps" aria-controls="hor_1_tab_item-2" (click)="onClickMenu(3)" role="tab">
                     <i class="fa fa-th-large"></i><span class="menu__label">Apps</span>
                 </li>
-                <!-- <li class="element-admin resp-tab-item hor_1" data-toggle="tooltip" data-placement="right" title="" data-original-title="UI Elements" aria-controls="hor_1_tab_item-3" role="tab">
-                    <i class="side-menu__icon bx bx-tone"></i><span class="menu__label">UI Elements</span>
+                <li class="element-admin resp-tab-item hor_1" data-toggle="tooltip" data-placement="right"  [ngClass]="{'active': navLinkId == '3'}" title="" data-original-title="UI Elements" aria-controls="hor_1_tab_item-3" (click)="onClickMenu(4)" role="tab">
+                    <i class="fa fa-bar-chart"></i><span class="menu__label"> Elements</span>
                 </li>
 
-                <li class="forms-admin resp-tab-item hor_1" data-toggle="tooltip" data-placement="right" title="" data-original-title="Forms" aria-controls="hor_1_tab_item-7" role="tab">
+              <!--   <li class="forms-admin resp-tab-item hor_1" data-toggle="tooltip" data-placement="right" title="" data-original-title="Forms" aria-controls="hor_1_tab_item-7" role="tab">
                     <i class="side-menu__icon bx bx-receipt"></i><span class="menu__label">Forms</span><span class="badge badge-danger menu-badge">6</span>
                 </li>
                 
@@ -57,10 +57,32 @@
                                     <div class="tab-content">
                                         <div class="tab-pane" id="side1">
                                             
+                                            <h5 class="menu-label mt-3 mb-2">Dashboard </h5>
+                                         
+
+                                            
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="dashboard-admin  resp-tab-content hor_1" aria-labelledby="hor_1_tab_item-0" [ngClass]="{'active resp-tab-content-active': navLinkId == '2'}">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="panel sidetab-menu">
+                                
+                                <div class="panel-body tabs-menu-body p-0 border-0">
+                                    <div class="tab-content">
+                                        <div class="tab-pane" id="side1">
+                                            
                                             <h5 class="menu-label mt-3 mb-2">Companies List</h5>
                                             <div class="side-menu p-0">
                                                 <div class="slide submenu">
-                                                    <a class="side-menu__item" data-toggle="slide" href="#"><i class="las la-pager"></i> <span class="side-menu__label">Banking</span><i class=" fa fa-chevron-down"></i></a>
+                                                    <a class="side-menu__item" data-toggle="slide" href="#" routerLink="sentimentanalysiscomponent"><i class="las la-pager"></i> <span class="side-menu__label">Banking</span><i class=" fa fa-chevron-down"></i></a>
                                                     <ul class="slide-menu submenu-list">
                                                         <li><a href="widgets.html" class="slide-item">Bank Name 1</a></li>
                                                         <li><a href="chart-widgets.html" class="slide-item">Bank Name 2</a></li>
@@ -89,7 +111,7 @@
                 </li>
 
                 <h2 class="resp-accordion hor_1" role="tab" aria-expanded="hor_1_tab_item-1" id="components"><span class="resp-arrow"></span> <i class="side-menu__icon bx bx-grid-alt"></i><span class="menu__label">Components</span></h2>
-                <li class="components-admin resp-tab-content hor_1" aria-labelledby="hor_1_tab_item-1" [ngClass]="{'active resp-tab-content-active': navLinkId == '2'}">
+                <li class="components-admin resp-tab-content hor_1" aria-labelledby="hor_1_tab_item-1" [ngClass]="{'active resp-tab-content-active': navLinkId == '3'}">
                     <div class="row">
                         <div class="col-md-12">
                             <div class="panel sidetab-menu">

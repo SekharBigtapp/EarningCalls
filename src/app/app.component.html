@@ -1,12 +1,25 @@
 
 
 
-<div class="page">
+<!-- <div class="page">
 
   <app-side-nav *ngIf="!!this.dataStorage.isUserLoggedIn"> </app-side-nav>
 
   <div class="main-content">
     <app-top-nav *ngIf="!!this.dataStorage.isUserLoggedIn"></app-top-nav>
+    <router-outlet></router-outlet>
+    
+  </div>
+
+  <app-footer></app-footer>
+</div> -->
+
+<div class="page">
+
+  <app-side-nav> </app-side-nav>
+
+  <div class="main-content">
+    <app-top-nav ></app-top-nav>
     <router-outlet></router-outlet>
     
   </div>

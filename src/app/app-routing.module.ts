@@ -7,15 +7,20 @@ import { WordCloudComponent } from './modules/word-cloud/word-cloud.component';
 import { UploadDocumentComponent } from './modules/upload-document/upload-document.component';
 import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
+import { DashboardComponent } from './modules/dashboard/dashboard.component';
+import { CompanyRegisterComponent } from './modules/company-register/company-register.component';
 
 const routes: Routes = [
-   {path: '',component:LoginComponent},
-   {path: 'register',component:RegisterComponent},
+  //  {path: '',component:LoginComponent},
+  //  {path: 'register',component:RegisterComponent},
+  {path: '', component:DashboardComponent}, 
+  {path: 'dashboard', component:DashboardComponent},
+   {path: 'company_register', component:CompanyRegisterComponent},
   { path: 'sentimentanalysiscomponent', component: SentimentAnalysisComponent },
   { path: 'nameEntityRecz', component: NamedEntitiesRecgComponent },
   { path: 'wordCloud', component: WordCloudComponent },
   { path: 'summary-info', component:SummaryInfoComponent },
-    { path: 'upload-doc', component:UploadDocumentComponent },
+  { path: 'upload-doc', component:UploadDocumentComponent },
 
 ];
 

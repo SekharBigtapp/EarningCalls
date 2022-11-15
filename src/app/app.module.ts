@@ -23,6 +23,8 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
+import { DashboardComponent } from './modules/dashboard/dashboard.component';
+import { CompanyRegisterComponent } from './modules/company-register/company-register.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +39,9 @@ import { RegisterComponent } from './auth/register/register.component';
     SummaryInfoComponent,
     UploadDocumentComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    DashboardComponent,
+    CompanyRegisterComponent
   ],
   imports: [
     BrowserModule,

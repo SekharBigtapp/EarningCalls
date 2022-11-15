@@ -19,7 +19,7 @@ export class LoginComponent implements OnInit {
   }
 
   onLogin(){
-    this.router.navigateByUrl('sentimentanalysiscomponent')
+    this.router.navigateByUrl('dashboard')
     this.dataStorage.isUserLoggedIn = true
   }
 
