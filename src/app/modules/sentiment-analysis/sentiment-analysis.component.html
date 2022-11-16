@@ -1,293 +1,306 @@
+<!-- Container-fluid -->
+<div class="container-fluid">
+  <!-- Main-content-body -->
+  <div class="main-content-body">
 
-  
-  <!-- Container-fluid -->
-  <div class="container-fluid">
-    <!-- Main-content-body -->
-    <div class="main-content-body">
+    <div class="row row-sm sentiment-analysis">
+      <div class="col-md-7 col-lg-7">
+        <div class="card p-3">
+          <div class="document-sec">
+            <p class="document-view text-sm p-3">
+            <h2>Apple.txt</h2>
+            <div [innerHTML]="data_1" class="sentiment-info">
 
-      <div class="row row-sm sentiment-analysis">
-        <div class="col-md-7 col-lg-7">
-          <div class="card p-3">
-            <div class="document-sec">
-              <p class="document-view text-sm p-3">
-                <h2>Apple.txt</h2>
-                <div [innerHTML]="data_1" class="sentiment-info"></div>
             </div>
           </div>
         </div>
-        <div class="col-md-5 col-lg-5">
-          <div class="mt-3 space-y-3.5">
-            <div class="card p-3">
-              <div class="flex items-center space-x-3">
-                <img
-                  class="h-10 w-10 rounded-lg object-cover object-center"
-                  src="../../../assets/img/finance.png" height="40px" width="40px"
-                  alt="image"
-                />
-                <div class="flex-1">
-                  <div class="flex justify-between">
-                    <p
-                      class="font-medium text-slate-700 dark:text-navy-100"
-                    >
-                      Financial
-                    </p>
-                  </div>
-                  <div  class="mt-0.5 flex text-xs text-slate-700 dark:text-navy-300 font-medium" >
-                    <p class="text-success">Positive - {{data_2[6]}}</p>
-                    <div class="mx-2 my-1 hidden w-px bg-slate-200 dark:bg-navy-500 sm:flex" ></div>
-                    <p class="hidden sm:flex ">Neutral - {{data_2[8]}}</p>
-
-                    <div class="mx-2 my-1 hidden w-px bg-slate-200 dark:bg-navy-500 sm:flex" ></div>
-                    <p class="hidden sm:flex text-danger">Negative - {{data_2[7]}}</p>
-
-                  </div>
-
-                  
+      </div>
+      <div class="col-md-5 col-lg-5">
+        <div class="mt-3 space-y-3.5">
+          <div class="card p-3">
+            <div class="flex items-center space-x-3">
+              <img class="h-10 w-10 rounded-lg object-cover object-center" src="../../../assets/img/finance.png"
+                height="40px" width="40px" alt="image" />
+              <div class="flex-1">
+                <div class="flex justify-between">
+                  <p class="font-medium text-slate-700 dark:text-navy-100">
+                    Financial
+                  </p>
                 </div>
+                <div class="mt-0.5 flex text-xs text-slate-700 dark:text-navy-300 font-medium">
+                  <p class="text-success">Positive - {{data_2[6]}}</p>
+                  <div class="mx-2 my-1 hidden w-px bg-slate-200 dark:bg-navy-500 sm:flex"></div>
+                  <p class="hidden sm:flex ">Neutral - {{data_2[8]}}</p>
+
+                  <div class="mx-2 my-1 hidden w-px bg-slate-200 dark:bg-navy-500 sm:flex"></div>
+                  <p class="hidden sm:flex text-danger">Negative - {{data_2[7]}}</p>
+
+                </div>
+
+
               </div>
-              <p class="-mt-3 text-right text-xs font-medium text-success dark:text-accent-light">
-                <br>
-              </p>
-              <div class="progress ht-15" >
-                <div class="progress-bar bg-success ht-15 w-60"
-                    style="width: 20%">53%
-                </div>
-                <div class="progress-bar bg-danger ht-15 " style="width: 10%;">
-                    6%
-                </div>
             </div>
-
-             <!---<div class="progress ht-15 "> <div class="progress-bar progress-bar-striped progress-bar-animated bg-success ht-15 w-60">53%</div> </div>-->
-            </div>
-
-
-            <div class="card p-3">
-              <div class="flex items-center space-x-3">
-                <img
-                  class="h-10 w-10 rounded-lg object-cover object-center"
-                  src="../../../assets/img/market-position.png"  height="40px" width="40px"
-                  alt="image"
-                />
-                <div class="flex-1" (click)="onclick">
-                  <div class="flex justify-between">
-                    <p
-                      class="font-medium text-slate-700 dark:text-navy-100"
-                    >
-                      Market Position
-                    </p>
-                  </div>
-                  <div  class="mt-0.5 flex text-xs text-slate-700 dark:text-navy-300 font-medium" >
-                    <p class="text-success">Positive - {{data_2[3]}}</p>
-                    <div class="mx-2 my-1 hidden w-px bg-slate-200 dark:bg-navy-500 sm:flex" ></div>
-                    <p class="hidden sm:flex ">Neutral - {{data_2[5]}}</p>
-
-                    <div class="mx-2 my-1 hidden w-px bg-slate-200 dark:bg-navy-500 sm:flex" ></div>
-                    <p class="hidden sm:flex text-danger">Negative - {{data_2[4]}}</p>
-
-                  </div>
-
-                  
-                </div>
+            <p class="-mt-3 text-right text-xs font-medium text-success dark:text-accent-light">
+              <br>
+            </p>
+            <!-- <div class="progress ht-15">
+              <div class="progress-bar bg-success ht-15 w-60" [style]='"width:"+financialpercentage[0]'>
+                {{financialpercentage[0]}}%
               </div>
-              <p class="-mt-3 text-right text-xs font-medium text-success dark:text-accent-light">
-                <br>
-              </p>
-              <div class="progress ht-15" >
-                <div class="progress-bar bg-success ht-15 w-60"
-                    style="width: 19%">49%
-                </div>
-                <div class="progress-bar bg-danger ht-15 " style="width: 5%;">
-                    3%
-                </div>
-            </div>
+              <div class="progress-bar bg-warning ht-15 w-60" [style]='"width:"+financialpercentage[1]'>{{financialpercentage[1]}}%
+              </div>
+              <div class="progress-bar bg-danger ht-15 " [style]='"width:"+financialpercentage[2]'>{{financialpercentage[2]}}%
+
+              </div>
+            </div> -->
+
+            <div class="d-flex ht-20 justify-content-between">
+              <div class="bg-success text-center align-middle " [style.width]='financialpercentage[0]+"%"'
+                [style.color]='"white"'>{{financialpercentage[0]}}%</div>
+              <!-- <div class="bg-warning text-center " [style.width]='financialpercentage[1]+"%"' [style.color]='"white"'>
+                {{financialpercentage[1]}}%</div> -->
+              <div class="bg-danger text-center " [style.width]='financialpercentage[2]+"%"' [style.color]='"white"'>
+                {{financialpercentage[2]}}%</div>
+
             </div>
 
+            <!---<div class="progress ht-15 "> <div class="progress-bar progress-bar-striped progress-bar-animated bg-success ht-15 w-60">53%</div> </div>-->
+          </div>
 
-            <div class="card p-3">
-              <div class="flex items-center space-x-3">
-                <img
-                  class="h-10 w-10 rounded-lg object-cover object-center"
-                  src="../../../assets/img/head-winds.png" height="40px" width="40px"
-                  alt="image"
-                />
-                <div class="flex-1">
-                  <div class="flex justify-between">
-                    <p
-                      class="font-medium text-slate-700 dark:text-navy-100"
-                    >
+
+          <div class="card p-3">
+            <div class="flex items-center space-x-3">
+              <img class="h-10 w-10 rounded-lg object-cover object-center" src="../../../assets/img/market-position.png"
+                height="40px" width="40px" alt="image" />
+              <div class="flex-1" (click)="onclick">
+                <div class="flex justify-between">
+                  <p class="font-medium text-slate-700 dark:text-navy-100">
+                    Market Position
+                  </p>
+                </div>
+                <div class="mt-0.5 flex text-xs text-slate-700 dark:text-navy-300 font-medium">
+                  <p class="text-success">Positive - {{data_2[3]}}</p>
+                  <div class="mx-2 my-1 hidden w-px bg-slate-200 dark:bg-navy-500 sm:flex"></div>
+                  <p class="hidden sm:flex ">Neutral - {{data_2[5]}}</p>
+
+                  <div class="mx-2 my-1 hidden w-px bg-slate-200 dark:bg-navy-500 sm:flex"></div>
+                  <p class="hidden sm:flex text-danger">Negative - {{data_2[4]}}</p>
+
+                </div>
+
+
+              </div>
+            </div>
+            <p class="-mt-3 text-right text-xs font-medium text-success dark:text-accent-light">
+              <br>
+            </p>
+            <!-- <div class="progress ht-15">
+              <div class="progress-bar bg-success ht-15 w-60" style="width: 19%">49%
+              </div>
+              <div class="progress-bar bg-danger ht-15 " style="width: 5%;">
+                3%
+              </div>
+            </div> -->
+            <div class="d-flex ht-20 justify-content-between">
+              <div class="bg-success text-center align-middle " [style.width]='marketpositionpercentage[0]+"%"'
+                [style.color]='"white"'>{{marketpositionpercentage[0]}}%</div>
+              <!-- <div class="bg-warning text-center " [style.width]='marketpositionpercentage[1]+"%"' [style.color]='"white"'>
+                {{marketpositionpercentage[1]}}%</div> -->
+              <div class="bg-danger text-center " [style.width]='marketpositionpercentage[2]+"%"'
+                [style.color]='"white"'>
+                {{marketpositionpercentage[2]}}%</div>
+
+            </div>
+
+          </div>
+
+
+          <div class="card p-3">
+            <div class="flex items-center space-x-3">
+              <img class="h-10 w-10 rounded-lg object-cover object-center" src="../../../assets/img/head-winds.png"
+                height="40px" width="40px" alt="image" />
+              <div class="flex-1">
+                <div class="flex justify-between">
+                  <p class="font-medium text-slate-700 dark:text-navy-100">
                     Headwinds Tailwinds
-                    </p>
-                  </div>
-                  <div  class="mt-0.5 flex text-xs text-slate-700 dark:text-navy-300 font-medium" >
-                    <p class="text-success">Positive - {{data_2[0]+data_2[3]+data_2[6]}}</p>
-                    <div class="mx-2 my-1 hidden w-px bg-slate-200 dark:bg-navy-500 sm:flex" ></div>
-                    <p class="hidden sm:flex ">Neutral - {{data_2[2]+data_2[5]+data_2[8]}}</p>
-
-                    <div class="mx-2 my-1 hidden w-px bg-slate-200 dark:bg-navy-500 sm:flex" ></div>
-                    <p class="hidden sm:flex text-danger">Negative - {{data_2[1]+data_2[4]+data_2[7]}}</p>
-
-                  </div>
-
-                  
+                  </p>
                 </div>
+                <div class="mt-0.5 flex text-xs text-slate-700 dark:text-navy-300 font-medium">
+                  <p class="text-success">Positive - {{data_2[0]+data_2[3]+data_2[6]}}</p>
+                  <div class="mx-2 my-1 hidden w-px bg-slate-200 dark:bg-navy-500 sm:flex"></div>
+                  <p class="hidden sm:flex ">Neutral - {{data_2[2]+data_2[5]+data_2[8]}}</p>
+
+                  <div class="mx-2 my-1 hidden w-px bg-slate-200 dark:bg-navy-500 sm:flex"></div>
+                  <p class="hidden sm:flex text-danger">Negative - {{data_2[1]+data_2[4]+data_2[7]}}</p>
+
+                </div>
+
+
               </div>
-              <p class="-mt-3 text-right text-xs font-medium text-success dark:text-accent-light">
-                <br>
-              </p>
-              <div class="progress ht-15" >
-                <div class="progress-bar bg-success ht-15 w-60"
-                    style="width: 17%">42%
-                </div>
-                <div class="progress-bar bg-danger ht-15 " style="width: 10%;">
-                    6%
-                </div>
             </div>
+            <p class="-mt-3 text-right text-xs font-medium text-success dark:text-accent-light">
+              <br>
+            </p>
+            <!-- <div class="progress ht-15">
+              <div class="progress-bar bg-success ht-15 w-60" style="width: 17%">42%
+              </div>
+              <div class="progress-bar bg-danger ht-15 " style="width: 10%;">
+                6%
+              </div>
+            </div> -->
+            <div class="d-flex ht-20 justify-content-between">
+              <div class="bg-success text-center align-middle " [style.width]='headwindspercentage[0]+"%"'
+                [style.color]='"white"'>{{headwindspercentage[0]}}%</div>
+              <!-- <div class="bg-warning text-center " [style.width]='headwindspercentage[1]+"%"' [style.color]='"white"'>
+                {{headwindspercentage[1]}}%</div> -->
+              <div class="bg-danger text-center " [style.width]='headwindspercentage[2]+"%"' [style.color]='"white"'>
+                {{headwindspercentage[2]}}%</div>
+
             </div>
-            <div class="card p-3">
-              <div class="flex items-center space-x-3">
-                <img
-                  class="h-10 w-10 rounded-lg object-cover object-center"
-                  src="../../../assets/img/leagal.png" height="40px" width="40px"
-                  alt="image"
-                />
-                <div class="flex-1">
-                  <div class="flex justify-between">
-                    <p
-                      class="font-medium text-slate-700 dark:text-navy-100"
-                    >
+          </div>
+          <div class="card p-3">
+            <div class="flex items-center space-x-3">
+              <img class="h-10 w-10 rounded-lg object-cover object-center" src="../../../assets/img/leagal.png"
+                height="40px" width="40px" alt="image" />
+              <div class="flex-1">
+                <div class="flex justify-between">
+                  <p class="font-medium text-slate-700 dark:text-navy-100">
                     Legal & Regulatory
-                    </p>
-                  </div>
-                  <div  class="mt-0.5 flex text-xs text-slate-700 dark:text-navy-300 font-medium" >
-                    <p class="text-success">Positive - {{data_2[0]}}</p>
-                    <div class="mx-2 my-1 hidden w-px bg-slate-200 dark:bg-navy-500 sm:flex" ></div>
+                  </p>
+                </div>
+                <div class="mt-0.5 flex text-xs text-slate-700 dark:text-navy-300 font-medium">
+                  <p class="text-success">Positive - {{data_2[0]}}</p>
+                  <div class="mx-2 my-1 hidden w-px bg-slate-200 dark:bg-navy-500 sm:flex"></div>
 
-                    <p class="hidden sm:flex ">Neutral - {{data_2[2]}}</p>
-                    <div class="mx-2 my-1 hidden w-px bg-slate-200 dark:bg-navy-500 sm:flex" ></div>
-                    <p class="hidden sm:flex text-danger">Negative - {{data_2[1]}}</p>
+                  <p class="hidden sm:flex ">Neutral - {{data_2[2]}}</p>
+                  <div class="mx-2 my-1 hidden w-px bg-slate-200 dark:bg-navy-500 sm:flex"></div>
+                  <p class="hidden sm:flex text-danger">Negative - {{data_2[1]}}</p>
 
-                  </div>
                 </div>
               </div>
-              <p class="-mt-3 text-right text-xs font-medium text-success dark:text-accent-light">
-                <br>
-              </p>
-              <div class="progress ht-15" >
-                <div class="progress-bar bg-success ht-15 w-60"
-                    style="width: 15%">37%
-                </div>
-                <div class="progress-bar bg-danger ht-15 " style="width: 15%;">
-                    9%
-                </div>
             </div>
-</div>
-            <div class="card p-3">
-              <div class="flex items-center space-x-3">
-                <img
-                  class="h-10 w-10 rounded-lg object-cover object-center"
-                  src="../../../assets/img/product.png" height="40px" width="40px"
-                  alt="image"
-                />
-                <div class="flex-1">
-                  <div class="flex justify-between">
-                    <p
-                      class="font-medium text-slate-700 dark:text-navy-100"
-                    >
+            <p class="-mt-3 text-right text-xs font-medium text-success dark:text-accent-light">
+              <br>
+            </p>
+            <!-- <div class="progress ht-15">
+              <div class="progress-bar bg-success ht-15 w-60" style="width: 15%">37%
+              </div>
+
+              <div class="progress-bar bg-danger ht-15 " style="width: 15%;">
+                9%
+              </div>
+            </div> -->
+            <div class="d-flex ht-20 justify-content-between">
+              <div class="bg-success text-center align-middle " [style.width]='legalpercentage[0]+"%"'
+                [style.color]='"white"'>{{legalpercentage[0]}}%</div>
+              <!-- <div class="bg-warning text-center " [style.width]='legalpercentage[1]+"%"' [style.color]='"white"'>
+                {{legalpercentage[1]}}%</div> -->
+              <div class="bg-danger text-center " [style.width]='legalpercentage[2]+"%"' [style.color]='"white"'>
+                {{legalpercentage[2]}}%</div>
+
+            </div>
+          </div>
+          <div class="card p-3">
+            <div class="flex items-center space-x-3">
+              <img class="h-10 w-10 rounded-lg object-cover object-center" src="../../../assets/img/product.png"
+                height="40px" width="40px" alt="image" />
+              <div class="flex-1">
+                <div class="flex justify-between">
+                  <p class="font-medium text-slate-700 dark:text-navy-100">
                     Product
-                    </p>
-                  </div>
-                  <div  class="mt-0.5 flex text-xs text-slate-700 dark:text-navy-300 font-medium" >
-                    <p class="text-success">Positive - 14</p>
-                    <div class="mx-2 my-1 hidden w-px bg-slate-200 dark:bg-navy-500 sm:flex" ></div>
-                    <p class="hidden sm:flex ">Neutral - 03</p>
+                  </p>
+                </div>
+                <div class="mt-0.5 flex text-xs text-slate-700 dark:text-navy-300 font-medium">
+                  <p class="text-success">Positive - 14</p>
+                  <div class="mx-2 my-1 hidden w-px bg-slate-200 dark:bg-navy-500 sm:flex"></div>
+                  <p class="hidden sm:flex ">Neutral - 03</p>
 
-                    <div class="mx-2 my-1 hidden w-px bg-slate-200 dark:bg-navy-500 sm:flex" ></div>
+                  <div class="mx-2 my-1 hidden w-px bg-slate-200 dark:bg-navy-500 sm:flex"></div>
 
-                    <p class="hidden sm:flex text-danger">Negative - 22</p>
-                  </div>
+                  <p class="hidden sm:flex text-danger">Negative - 22</p>
                 </div>
               </div>
-              <p class="-mt-3 text-right text-xs font-medium text-success dark:text-accent-light">
-                <br>
-              </p>
-              <div class="progress ht-15" >
-                <div class="progress-bar bg-success ht-15 w-60"
-                    style="width: 14%">35%
-                </div>
-                <div class="progress-bar bg-danger ht-15 " style="width: 60%;">
-                    56%
-                </div>
             </div>
+            <p class="-mt-3 text-right text-xs font-medium text-success dark:text-accent-light">
+              <br>
+            </p>
+            <div class="progress ht-15">
+              <div class="progress-bar bg-success ht-15 w-60" style="width: 14%">35%
+              </div>
+              <div class="progress-bar bg-danger ht-15 " style="width: 60%;">
+                56%
+              </div>
             </div>
+          </div>
 
-            <div class="card p-3">
-              <div class="flex items-center space-x-3">
-                <img
-                  class="h-10 w-10 rounded-lg object-cover object-center"
-                  src="../../../assets/img/deception.png" height="40px" width="40px"
-                  alt="image"
-                />
-                <div class="flex-1">
-                  <div class="flex justify-between">
-                    <p
-                      class="font-medium text-slate-700 dark:text-navy-100"
-                    >
+          <div class="card p-3">
+            <div class="flex items-center space-x-3">
+              <img class="h-10 w-10 rounded-lg object-cover object-center" src="../../../assets/img/deception.png"
+                height="40px" width="40px" alt="image" />
+              <div class="flex-1">
+                <div class="flex justify-between">
+                  <p class="font-medium text-slate-700 dark:text-navy-100">
                     Deception
-                    </p>
-                  </div>
-                  <div  class="mt-0.5 flex text-xs text-slate-700 dark:text-navy-300 font-medium" >
-                    <p class="text-success">Positive - 14</p>
-                    <div class="mx-2 my-1 hidden w-px bg-slate-200 dark:bg-navy-500 sm:flex" ></div>
-                    <p class="hidden sm:flex ">Neutral - 03</p>
+                  </p>
+                </div>
+                <div class="mt-0.5 flex text-xs text-slate-700 dark:text-navy-300 font-medium">
+                  <p class="text-success">Positive - 14</p>
+                  <div class="mx-2 my-1 hidden w-px bg-slate-200 dark:bg-navy-500 sm:flex"></div>
+                  <p class="hidden sm:flex ">Neutral - 03</p>
 
-                    <div class="mx-2 my-1 hidden w-px bg-slate-200 dark:bg-navy-500 sm:flex" ></div>
-                    <p class="hidden sm:flex text-danger">Negative - 22</p>
-
-                  </div>
+                  <div class="mx-2 my-1 hidden w-px bg-slate-200 dark:bg-navy-500 sm:flex"></div>
+                  <p class="hidden sm:flex text-danger">Negative - 22</p>
 
                 </div>
+
               </div>
-              <p class="-mt-3 text-right text-xs font-medium text-success dark:text-accent-light">
-                <br>
-              </p>
-              <div class="progress ht-15"  >
-                <div class="progress-bar bg-success ht-15 w-60"
-                    style="width: 14%">35%
-                </div>
-                <div class="progress-bar bg-danger ht-15 "  style="width: 60%;">
-                    56%
-                </div>
             </div>
+            <p class="-mt-3 text-right text-xs font-medium text-success dark:text-accent-light">
+              <br>
+            </p>
+            <div class="progress ht-15">
+              <div class="progress-bar bg-success ht-15 w-60" style="width: 14%">35%
+              </div>
+              <div class="progress-bar bg-danger ht-15 " style="width: 60%;">
+                56%
+              </div>
             </div>
+          </div>
 
-            <div class="card p-3">
-              <a class="cursor-pointer">
+          <div class="card p-3">
+            <a class="cursor-pointer">
               <div class="flex items-center space-x-3" routerLink="/nameEntityRecz">
                 Named Entities Recognition
               </div>
             </a>
-            </div>
+          </div>
 
-            <div class="card p-3">
-              <a class="cursor-pointer"> <div class="flex items-center space-x-3" routerLink="/wordCloud">
+          <div class="card p-3">
+            <a class="cursor-pointer">
+              <div class="flex items-center space-x-3" routerLink="/wordCloud">
                 Word Cloud
-              </div></a>
-            </div>
+              </div>
+            </a>
+          </div>
 
-            <div class="card p-3">
-              <a class="cursor-pointer"><div class="flex items-center space-x-3" routerLink="/summary-info">
+          <div class="card p-3">
+            <a class="cursor-pointer">
+              <div class="flex items-center space-x-3" routerLink="/summary-info">
                 Summary
-              </div> </a>
-            </div>
-            <div class="card p-3">
-              <a class="cursor-pointer"><div class="flex items-center space-x-3" routerLink="/upload-doc">
+              </div>
+            </a>
+          </div>
+          <div class="card p-3">
+            <a class="cursor-pointer">
+              <div class="flex items-center space-x-3" routerLink="/upload-doc">
                 Upload Document
-              </div> </a>
-            </div>
+              </div>
+            </a>
+          </div>
 
-            </div>
         </div>
       </div>
-
     </div>
+
   </div>
+</div>
