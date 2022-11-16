@@ -9,6 +9,7 @@ import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
 import { DashboardComponent } from './modules/dashboard/dashboard.component';
 import { CompanyRegisterComponent } from './modules/company-register/company-register.component';
+import { IndividualSentimentAnalysisComponent } from './modules/individual-sentiment-analysis/individual-sentiment-analysis.component';
 
 const routes: Routes = [
   //  {path: '',component:LoginComponent},
@@ -21,6 +22,7 @@ const routes: Routes = [
   { path: 'wordCloud', component: WordCloudComponent },
   { path: 'summary-info', component:SummaryInfoComponent },
   { path: 'upload-doc', component:UploadDocumentComponent },
+  { path: 'individual-analytics', component:IndividualSentimentAnalysisComponent}
 
 ];
 

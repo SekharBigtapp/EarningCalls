@@ -25,6 +25,8 @@ import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
 import { DashboardComponent } from './modules/dashboard/dashboard.component';
 import { CompanyRegisterComponent } from './modules/company-register/company-register.component';
+import { IndividualSentimentAnalysisComponent } from './modules/individual-sentiment-analysis/individual-sentiment-analysis.component';
+
 
 @NgModule({
   declarations: [
@@ -41,7 +43,8 @@ import { CompanyRegisterComponent } from './modules/company-register/company-reg
     LoginComponent,
     RegisterComponent,
     DashboardComponent,
-    CompanyRegisterComponent
+    CompanyRegisterComponent,
+    IndividualSentimentAnalysisComponent
   ],
   imports: [
     BrowserModule,
@@ -55,6 +58,8 @@ import { CompanyRegisterComponent } from './modules/company-register/company-reg
     MatInputModule,
     MatSelectModule,
     MatPaginatorModule,
+    MatTableModule,
+    
     
 
   ],

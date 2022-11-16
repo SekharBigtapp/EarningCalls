@@ -31,7 +31,7 @@
                 <div>
 
               <form >
-                <mat-form-field >
+                <!-- <mat-form-field >
                     <mat-label>Customer Id</mat-label>
                     <mat-select>
                         <mat-option value="1"> 1 </mat-option>
@@ -57,7 +57,7 @@
                         
                       </mat-select>
                     
-                </mat-form-field>
+                </mat-form-field> 
                 <mat-form-field >
                     <mat-label>transript File Name</mat-label>
                     <mat-select>
@@ -65,13 +65,17 @@
                         <mat-option value="BigTapp"> BigTapp </mat-option>
                         
                       </mat-select>
-                    
-                </mat-form-field>
+                </mat-form-field>-->
+
+                <mat-form-field appearance="fill">
+                    <mat-label>Transript File Name</mat-label>
+                    <input matInput>
+                  </mat-form-field>
                 
                 
                 <div id="upload">
                     <!-- <h4 class="text-center dropZoneTitle">Upload EXCEL file format</h4> -->
-                    <h4 class="text-center dropZoneTitle">Select data template excel file to upload</h4>
+                    <h4 class="text-center dropZoneTitle">Select Transript File Name</h4>
                     <div class="drag-riles">
                         <input type="file" #fileDropRef id="fileDropRef" (change)="onFileChange($event)"
                             accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel" />

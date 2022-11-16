@@ -1,0 +1,69 @@
+<!-- Container-fluid -->
+<div class="container-fluid">
+  <!-- Main-content-body -->
+  <div class="main-content-body">
+
+    <div class="row row-sm sentiment-analysis">
+      <div class="col-md-12">
+        <div class="card p-3 ml-3">
+
+          <div class="individual-sentiment-analysis">
+
+
+
+            <div class="tabbable-panel">
+              <div class="tabbable-line">
+                <ul class="nav nav-tabs ">
+                  <li class="">
+                    <a href="#tab_default_1" class="active" data-toggle="tab">
+                     Sentiment Analysis </a>
+                  </li>
+                  <li>
+                    <a href="#tab_default_2" data-toggle="tab">
+                      Named Entities </a>
+                  </li>
+                  <li>
+                    <a href="#tab_default_3" data-toggle="tab">
+                      Word Cloud </a>
+                  </li>
+                  <li>
+                    <a href="#tab_default_4" data-toggle="tab">
+                      Summary </a>
+                  </li>
+                  <li>
+                    <a href="#tab_default_5" data-toggle="tab">
+                      Upload Document  </a>
+                  </li>
+                </ul>
+
+                <div class="tab-content">
+                  <div class="tab-pane active" id="tab_default_1">
+                    <app-sentiment-analysis></app-sentiment-analysis>
+                  </div>
+                  <div class="tab-pane" id="tab_default_2">
+                    <app-named-entities-recg></app-named-entities-recg>
+
+                  </div>
+                  <div class="tab-pane" id="tab_default_3">
+                    <app-word-cloud></app-word-cloud>
+
+                  </div>
+                  <div class="tab-pane" id="tab_default_4">
+                    <app-summary-info></app-summary-info>
+                  </div>
+                  <div class="tab-pane" id="tab_default_5">
+                   <app-upload-document></app-upload-document>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

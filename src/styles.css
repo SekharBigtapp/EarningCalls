@@ -3,3 +3,8 @@
 html, body { height: 100%; 
     font-family: 'Proxima-Nova-Font';}
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.tab-content img {
+    animation: none;
+    width: auto;
+}
