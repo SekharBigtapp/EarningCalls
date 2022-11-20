@@ -1,229 +1,72 @@
+
 <!-- Container-fluid -->
 <div class="container-fluid">
     <!-- Main-content-body -->
     <div class="main-content-body">
-
-        <div class="dashboard-layout">
-            <div class=" p-3">
-                <h2 class="text-sm+ font-medium tracking-wide text-slate-700 dark:text-navy-100 text-top" style="vertical-align:text-top;">
-                    Overview  
-                    <span class="btn btn-primary float-right"> <i class="fa fa-plus"></i> Add New Company </span>
-                </h2>
-                <div class="row dashboard-tails">
-                    <div class="col-sm-3">
-                        <div class="tile bg-slate-100">
-                            <h3 class="title mb-1">Financial <span class="float-right"> <i class="fa fa-usd"> </i>
-                                </span></h3>
-                            <p>
-                                <small> Positive : <span> 60% </span></small><br>
-                                <small> Negative : <span class="text-grey"> 30% </span></small>
-                            </p>
-
+        <div class="row">
+            <div class="col-md-6">
+                <div class="company  mb-3 border border-success p-5 " (click)="companuyClick()" routerLink="individual-dashboard" > 
+                    <h2 class="text-center">Apple</h2>
+                    <br />
+                    <br />
+                    <div class="d-flex flex-row justify-content-center ">
+                        <div class="innerchart">
+                            <canvas id="apple-pie"></canvas>
                         </div>
-                    </div>
-
-                    <div class="col-sm-3">
-                        <div class="tile bg-slate-100">
-                            <h3 class="title mb-1">Market Position <span class="float-right"> <i class="fa fa-signal">
-                                    </i></span></h3>
-                            <p>
-                                <small> Positive : <span> 60% </span></small><br>
-                                <small> Negative : <span class="text-grey"> 30% </span></small>
-                            </p>
+                        <div class="innerchart">
+                            <canvas id="apple-line"></canvas>
                         </div>
+            
                     </div>
+                </div>
+            </div>
 
-                    <div class="col-sm-3">
-                        <div class="tile bg-slate-100">
-                            <h3 class="title mb-1">Legal & Regulatory <span class="float-right"> <i class="fa fa-gavel">
-                                    </i></span></h3>
-                            <p>
-                                <small> Positive : <span> 60% </span></small><br>
-                                <small> Negative : <span class="text-grey"> 30% </span></small>
-                            </p>
+            <div class="col-md-6">
+                <div class="company  mb-3 border border-success p-5 ">
+                    <h2 class="text-center">Microsoft</h2>
+                    <br />
+                    <br />
+                    <div class="d-flex flex-row justify-content-center ">
+                        <div class="innerchart">
+                            <canvas id="microsoft-pie"></canvas>
                         </div>
-                    </div>
-
-                    <div class="col-sm-3">
-                        <div class="tile bg-slate-100">
-                            <h3 class="title mb-1">Headwinds Tailwinds <span class="float-right"> <i
-                                        class="fa fa-arrows-alt"> </i></span></h3>
-                            <p>
-                                <small> Positive : <span> 60% </span></small><br>
-                                <small> Negative : <span class="text-grey"> 30% </span></small>
-                            </p>
+                        <div class="innerchart">
+                            <canvas id="microsoft-line"></canvas>
                         </div>
+            
                     </div>
-
                 </div>
             </div>
 
 
-            <div class="row p-3">
-                <div class="col-md-6">
-                    <div class="card p-3">
-                        <p class="text-base font-medium text-slate-600 dark:text-navy-100 ">
-                            Company Overview
-                          </p>
-                          <!-- <div id="chartdiv" style="width: 100%; height: 500px;"></div> -->
-                          <div class=""> <img src="../../../assets/img/bar-graph.jpg" /> </div>
+            <div class="col-md-6">
+                
+            <div class="company  mb-3 border border-success p-5 ">
+                <h2 class="text-center">Google</h2>
+                <br />
+                <br />
+                <div class="d-flex flex-row justify-content-center ">
+                    <div class="innerchart">
+                        <canvas id="google-pie"></canvas>
                     </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="card p-3">
-                                <div class="company-names">
-                                    <div routerLink="individual-analytics">
-                                        <p class="text-base font-medium text-slate-600 dark:text-navy-100 mb-0">
-                                            Apple
-                                          </p>
-                                          <p class="text-xs text-slate-400 dark:text-navy-300">
-                                            Positive - Negative - Nutral
-                                          </p>
-                                        <div class="graph-block">
-                                            <div class="pie-chat text-center">
-                                                <img src="../../../assets/img/pie-chat.jpg" width="120px" />
-                                            </div>
-                                            <div class="cart-legend row pl-3 pr-3">
-                                               <p class="col-6"> 
-                                                <small>1st Qtr  <i class="fa fa-arrow-up text-success"></i> </small> <br>
-                                                <small>3rd Qtr  <i class="fa fa-arrow-down text-warning"></i> </small>
-                                                </p> 
-                                                <p class="col-6"> 
-                                                    <small>2nd Qtr  <i class="fa fa-arrow-up text-warning"></i> </small> <br>
-                                                    <small>4th Qtr  <i class="fa fa-arrow-down text-warning"></i> </small>
-                                                </p>
-                                            </div>
-                                        </div>
-                                      </div>
-                                </div>
-                            </div>
-                            </div>
-
-                            
-                            <!-- <div class="col-md-6">
-                                <div class="card p-3">
-                                <div class="company-names">
-                                    <div>
-                                        <p class="text-base font-medium text-slate-600 dark:text-navy-100 mb-0">
-                                            
-                                          </p>
-                                          <p class="text-xs text-slate-400 dark:text-navy-300">
-                                            Positive - Negative - Nutral
-                                          </p>
-                                        <div class="graph-block">
-                                            <div class="pie-chat text-center">
-                                                <img src="../../../assets/img/pie-chat.jpg" width="120px" />
-                                            </div>
-                                            <div class="cart-legend row pl-3 pr-3">
-                                               <p class="col-6"> 
-                                                <small>1st Qtr  <i class="fa fa-arrow-up text-success"></i> </small> <br>
-                                                <small>3rd Qtr  <i class="fa fa-arrow-down text-warning"></i> </small>
-                                                </p> 
-                                                <p class="col-6"> 
-                                                    <small>2nd Qtr  <i class="fa fa-arrow-up text-warning"></i> </small> <br>
-                                                    <small>4th Qtr  <i class="fa fa-arrow-down text-warning"></i> </small>
-                                                </p>
-                                            </div>
-                                        </div>
-                                      </div>
-                                </div>
-                            </div>
-                            </div> -->
-
-                            <!-- <div class="col-md-6">
-                                <div class="card p-3">
-                                <div class="company-names">
-                                    <div>
-                                        <p class="text-base font-medium text-slate-600 dark:text-navy-100 mb-0">
-                                            Company Name 3
-                                          </p>
-                                          <p class="text-xs text-slate-400 dark:text-navy-300">
-                                            Positive - Negative - Nutral
-                                          </p>
-                                        <div class="graph-block">
-                                            <div class="pie-chat text-center">
-                                                <img src="../../../assets/img/pie-chat.jpg" width="120px" />
-                                            </div>
-                                            <div class="cart-legend row pl-3 pr-3">
-                                               <p class="col-6"> 
-                                                <small>1st Qtr  <i class="fa fa-arrow-up text-success"></i> </small> <br>
-                                                <small>3rd Qtr  <i class="fa fa-arrow-down text-warning"></i> </small>
-                                                </p> 
-                                                <p class="col-6"> 
-                                                    <small>2nd Qtr  <i class="fa fa-arrow-up text-warning"></i> </small> <br>
-                                                    <small>4th Qtr  <i class="fa fa-arrow-down text-warning"></i> </small>
-                                                </p>
-                                            </div>
-                                        </div>
-                                      </div>
-                                </div>
-                            </div>
-                            </div> -->
-
-                            
-                            <!-- <div class="col-md-6">
-                                <div class="card p-3">
-                                <div class="company-names">
-                                    <div>
-                                        <p class="text-base font-medium text-slate-600 dark:text-navy-100 mb-0">
-                                           Add New Company
-                                          </p>
-                                          <p class="text-xs text-slate-400 dark:text-navy-300">
-                                           &nbsp;
-                                          </p>
-                                        <div class="graph-block">
-                                            <div class="pie-chat text-center">
-                                                <img src="../../../assets/img/pie-chat.jpg" width="120px" />
-                                            </div>
-                                            <div class="cart-legend row pl-3 pr-3">
-                                               <p class="col-6"> 
-                                                <small>1st Qtr  <i class="fa fa-arrow-up text-success"></i> </small> <br>
-                                                <small>3rd Qtr  <i class="fa fa-arrow-down text-warning"></i> </small>
-                                                </p> 
-                                                <p class="col-6"> 
-                                                    <small>2nd Qtr  <i class="fa fa-arrow-up text-warning"></i> </small> <br>
-                                                    <small>4th Qtr  <i class="fa fa-arrow-down text-warning"></i> </small>
-                                                </p>
-                                            </div>
-                                        </div>
-                                      </div>
-                                </div>
-                            </div>
-                            </div> -->
-
-                        </div>
+                    <div class="innerchart">
+                        <canvas id="google-line"></canvas>
                     </div>
-
+        
                 </div>
             </div>
+            </div>
 
+            <div class="col-md-6">
+                <div (click)="adddashboard()"
+                class="company  mb-3 d-flex flex-row justify-content-center align-items-center border border-success p-5">
+                <button class="text-primary bg-transparent">+</button>
+            </div>
+            </div>
 
         </div>
-
-
-
-
-
     </div>
 </div>
-
-<style>
-    .company {
-        cursor: pointer;
-    }
-
-    .company:hover.company:not(:last-child) {
-        transform: scale(1.1);
-        transition: transform .5s ease-in;
-    }
-
-    button {
-        font-size: 9em;
-    }
-</style>
 
 <div class="container-fluid p-5">
     <div class="d-flex flex-column justify-content-center align-items-center flex-wrap pl-5">
@@ -245,55 +88,13 @@
 
         </div> -->
 
-        <div class="company  mb-3 border border-success p-5 "> 
-        <h2 class="text-center">Apple</h2>
-        <br />
-        <br />
-        <div class="d-flex flex-row justify-content-center ">
-            <div class="innerchart">
-                <canvas id="apple-pie"></canvas>
-            </div>
-            <div class="innerchart">
-                <canvas id="apple-line"></canvas>
-            </div>
+        
+    
 
-        </div>
-    </div>
-    <div class="company  mb-3 border border-success p-5 ">
-        <h2 class="text-center">Microsoft</h2>
-        <br />
-        <br />
-        <div class="d-flex flex-row justify-content-center ">
-            <div class="innerchart">
-                <canvas id="microsoft-pie"></canvas>
-            </div>
-            <div class="innerchart">
-                <canvas id="microsoft-line"></canvas>
-            </div>
-
-        </div>
-    </div>
-
-    <div class="company  mb-3 border border-success p-5 ">
-        <h2 class="text-center">Google</h2>
-        <br />
-        <br />
-        <div class="d-flex flex-row justify-content-center ">
-            <div class="innerchart">
-                <canvas id="google-pie"></canvas>
-            </div>
-            <div class="innerchart">
-                <canvas id="google-line"></canvas>
-            </div>
-
-        </div>
-    </div>
+    
 
 
-    <!-- <div (click)="adddashboard()"
-        class="company  mb-3 d-flex flex-row justify-content-center align-items-center border border-success p-5">
-        <button class="text-primary bg-transparent">+</button>
-    </div> -->
+    
 
 </div>
 

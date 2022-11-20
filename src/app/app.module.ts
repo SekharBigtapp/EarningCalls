@@ -26,6 +26,7 @@ import { RegisterComponent } from './auth/register/register.component';
 import { DashboardComponent } from './modules/dashboard/dashboard.component';
 import { CompanyRegisterComponent } from './modules/company-register/company-register.component';
 import { IndividualSentimentAnalysisComponent } from './modules/individual-sentiment-analysis/individual-sentiment-analysis.component';
+import { IndividualDashboardComponent } from './modules/individual-dashboard/individual-dashboard.component';
 
 
 @NgModule({
@@ -44,7 +45,8 @@ import { IndividualSentimentAnalysisComponent } from './modules/individual-senti
     RegisterComponent,
     DashboardComponent,
     CompanyRegisterComponent,
-    IndividualSentimentAnalysisComponent
+    IndividualSentimentAnalysisComponent,
+    IndividualDashboardComponent
   ],
   imports: [
     BrowserModule,
